@@ -1,3 +1,4 @@
+// for navigation
 const selection = document.querySelector('.selection');
 const closeMenu = document.querySelector('.closeMenu');
 const openMenu = document.querySelector('.openMenu');
@@ -22,6 +23,7 @@ function close(){
     selection.style.top = '-100%';
 }
 
+// swiper content
 var swiper = new Swiper('.swiper', {
     slidesPerView: 'auto',
     spaceBetween: 40,
