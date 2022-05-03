@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$colors:(
+    bg-body: #F8F9FA,
+    bg-hero: #F8F9FA,
+    bg-font: #212529,
+    btn-font: #F8F9FA,
+    bg-nav: #212529,
+    nav-font: #FFFFFF,
+    bg-whfont: #FFFFFF,
+    bg-projects: #EC615B,
+    hg-font: #EC615B,
+    bg-button: #5222D0 ,
+    proj-title: #5222D0
+);
+
+$font: "Lato",sans-serif;
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+}
+
+body{
+    font-family: $font;
+    background: color(bg-body);
+}
+
+//logo content
+
+.logo{
+    margin: 1em;
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    
+    .santander{
+        color: color(hg-font);
+    }
+}
+
+//navigation
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .selection{
+      height: 100vh;
+      position: fixed;
+      padding-top: 8em;
+      line-height: 4em;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      align-items: center;
+      background: color(bg-nav);
+      transition: top 1s ease 0s;
+      display: none;
+      list-style: none;
+      font-size: 18px;
+      font-weight: bold;
+   a{
+       color: color(nav-font);
+       text-decoration: none;
+   }
+
+   a:hover{
+       color: color(hg-font);
+   }
+
+   .social{
+    cursor: pointer;
+    color: white;
+    }
+}
+
+.openMenu{
+    margin: 1em;
+    font-size: 2rem;
+    cursor: pointer; 
+}
+.selection .closeMenu{
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 32px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  nav .openMenu {
+    display: block;
+  }
+
+  //hero container
+  .hero-container{
+      margin-top: 4em;
+
+      .sub-content{
+          text-align: center;
+          font-size: 12px;
+          font-weight: bold;
+          color: #696969;
+      }
+
+      h1{
+          margin: 0 1em;
+          font-size: 28px;
+          font-weight: bold;
+          text-align: center;
+          color: color(bg-font);    
+      }
+
+     .sub-text{
+          margin: 2em 4em;
+          font-size: 12;
+          text-align: center;   
+          color: color(bg-font);    
+      }
+
+      .view-work{
+        margin: auto;
+        width: 6em;
+        text-align: center;
+        background: color(bg-button);
+        color: color(btn-font);
+        border-radius: 1em;
+        padding: .8em;
+      }
+  }
+
+    .project-container{
+        margin-top: 4em;
+        background: color(bg-projects);
+        width: 100%;
+        padding: 0 1em;
+
+        .my-projects{
+            padding-top: 2em;
+            color: color(bg-whfont);
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 3em;
+        }
+
+        .check-mywork{
+            color: color(bg-whfont);
+            font-size: 14px;
+            padding-bottom: 4em;
+        }
+
+        // Web application build
+        .web-container{
+            border: #121212 solid .3em;
+            background: color(bg-body);
+            margin-bottom: 2em;
+        }
+
+        .web-icon{
+            padding-top: 1em;
+        margin: auto;
+        display: flex;
+            justify-content: center;
+        }
+        .web-title{
+            margin-top: 1em;
+            text-align: center;
+            color: #5222D0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .web-description{
+            color: #212529;
+            margin: 0 2em;
+            margin-bottom: 2em;
+            padding-top: 2em;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        // Front-end website 
+        .front-container{
+            border: #121212 solid .3em;
+            background: color(bg-body);
+            margin-bottom: 2em;
+        }
+
+        .front-icon{
+            padding-top: 1em;
+        margin: auto;
+        display: flex;
+            justify-content: center;
+        }
+        .front-title{
+            margin-top: 1em;
+            text-align: center;
+            color: #5222D0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .front-description{
+            color: #212529;
+            margin: 0 2em;
+            margin-bottom: 2em;
+            padding-top: 2em;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        // UI UX website 
+        .uiux-container{
+            border: #121212 solid .3em;
+            background: color(bg-body);
+        }
+
+        .uiux-icon{
+            padding-top: 1em;
+        margin: auto;
+        display: flex;
+            justify-content: center;
+        }
+        .uiux-title{
+            margin-top: 1em;
+            text-align: center;
+            color: #5222D0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .uiux-description{
+            color: #212529;
+            margin: 0 2em;
+            margin-bottom: 2em;
+            padding-top: 2em;
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 2em;
+        }
+
+        padding-bottom: 4em;
+    }
+
+    .latest-container{
+        padding: 2em 1em;
+
+        .latest-container{
+            font-size: 20px;
+            font-weight: bold;
+            color: #212529;
+        }
+
+        .new-project{
+            padding-top: 1em;
+            font-size: 14px;
+            color: #212529;
+        }
+
+        .thumbnail{
+            padding-top: 2em;
+            text-align: center;
+            .sub-title{
+                color: #EC615B;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .thumbnail-title{
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .thumnail-description{
+                margin-bottom: 2em;
+                text-align: justify;
+            }
+        }
+
+        .thumnail-img img{
+            border-radius: 2em;
+            width: 100%;
+            margin-bottom: 2em;
+        }
+        
+    }
+

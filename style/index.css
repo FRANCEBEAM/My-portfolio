@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #F8F9FA;
+}
+
+.logo {
+  margin: 1em;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+}
+
+.logo .santander {
+  color: #EC615B;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .selection {
+  height: 100vh;
+  position: fixed;
+  padding-top: 8em;
+  line-height: 4em;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 10;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #212529;
+  -webkit-transition: top 1s ease 0s;
+  transition: top 1s ease 0s;
+  display: none;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav .selection a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+nav .selection a:hover {
+  color: #EC615B;
+}
+
+nav .selection .social {
+  cursor: pointer;
+  color: white;
+}
+
+.openMenu {
+  margin: 1em;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.selection .closeMenu {
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 32px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav .openMenu {
+  display: block;
+}
+
+.hero-container {
+  margin-top: 4em;
+}
+
+.hero-container .sub-content {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #696969;
+}
+
+.hero-container h1 {
+  margin: 0 1em;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #212529;
+}
+
+.hero-container .sub-text {
+  margin: 2em 4em;
+  font-size: 12;
+  text-align: center;
+  color: #212529;
+}
+
+.hero-container .view-work {
+  margin: auto;
+  width: 6em;
+  text-align: center;
+  background: #5222D0;
+  color: #F8F9FA;
+  border-radius: 1em;
+  padding: .8em;
+}
+
+.project-container {
+  margin-top: 4em;
+  background: #EC615B;
+  width: 100%;
+  padding: 0 1em;
+  padding-bottom: 4em;
+}
+
+.project-container .my-projects {
+  padding-top: 2em;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 3em;
+}
+
+.project-container .check-mywork {
+  color: #FFFFFF;
+  font-size: 14px;
+  padding-bottom: 4em;
+}
+
+.project-container .web-container {
+  border: #121212 solid .3em;
+  background: #F8F9FA;
+  margin-bottom: 2em;
+}
+
+.project-container .web-icon {
+  padding-top: 1em;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-container .web-title {
+  margin-top: 1em;
+  text-align: center;
+  color: #5222D0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.project-container .web-description {
+  color: #212529;
+  margin: 0 2em;
+  margin-bottom: 2em;
+  padding-top: 2em;
+  text-align: center;
+  font-size: 14px;
+}
+
+.project-container .front-container {
+  border: #121212 solid .3em;
+  background: #F8F9FA;
+  margin-bottom: 2em;
+}
+
+.project-container .front-icon {
+  padding-top: 1em;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-container .front-title {
+  margin-top: 1em;
+  text-align: center;
+  color: #5222D0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.project-container .front-description {
+  color: #212529;
+  margin: 0 2em;
+  margin-bottom: 2em;
+  padding-top: 2em;
+  text-align: center;
+  font-size: 14px;
+}
+
+.project-container .uiux-container {
+  border: #121212 solid .3em;
+  background: #F8F9FA;
+}
+
+.project-container .uiux-icon {
+  padding-top: 1em;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-container .uiux-title {
+  margin-top: 1em;
+  text-align: center;
+  color: #5222D0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.project-container .uiux-description {
+  color: #212529;
+  margin: 0 2em;
+  margin-bottom: 2em;
+  padding-top: 2em;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 2em;
+}
+
+.latest-container {
+  padding: 2em 1em;
+}
+
+.latest-container .latest-container {
+  font-size: 20px;
+  font-weight: bold;
+  color: #212529;
+}
+
+.latest-container .new-project {
+  padding-top: 1em;
+  font-size: 14px;
+  color: #212529;
+}
+
+.latest-container .thumbnail {
+  padding-top: 2em;
+  text-align: center;
+}
+
+.latest-container .thumbnail .sub-title {
+  color: #EC615B;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.latest-container .thumbnail .thumbnail-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.latest-container .thumbnail .thumnail-description {
+  margin-bottom: 2em;
+  text-align: justify;
+}
+
+.latest-container .thumnail-img img {
+  border-radius: 2em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+/*# sourceMappingURL=index.css.map */
