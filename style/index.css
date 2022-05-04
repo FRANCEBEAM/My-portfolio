@@ -21,6 +21,11 @@ body {
   color: #EC615B;
 }
 
+.logo a {
+  color: #212529;
+  text-decoration: none;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,13 +124,31 @@ nav .openMenu {
 }
 
 .hero-container .view-work {
+  font-weight: bold;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
-  width: 6em;
+  text-decoration: none;
+  width: 7em;
   text-align: center;
   background: #5222D0;
   color: #F8F9FA;
   border-radius: 1em;
   padding: .8em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-container .arrow {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .project-container {
@@ -157,7 +180,9 @@ nav .openMenu {
 }
 
 .project-container .web-icon {
-  padding-top: 1em;
+  color: #121212;
+  font-size: 4em;
+  padding-top: .4em;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,6 +209,10 @@ nav .openMenu {
   font-size: 14px;
 }
 
+.project-container a {
+  text-decoration: none;
+}
+
 .project-container .front-container {
   border: #121212 solid .3em;
   background: #F8F9FA;
@@ -191,7 +220,9 @@ nav .openMenu {
 }
 
 .project-container .front-icon {
-  padding-top: 1em;
+  color: #121212;
+  font-size: 4em;
+  padding-top: .4em;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,7 +255,9 @@ nav .openMenu {
 }
 
 .project-container .uiux-icon {
-  padding-top: 1em;
+  color: #121212;
+  font-size: 4em;
+  padding-top: .4em;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -254,6 +287,7 @@ nav .openMenu {
 
 .latest-container {
   padding: 2em 1em;
+  color: #212529;
 }
 
 .latest-container .latest-container {
@@ -281,12 +315,15 @@ nav .openMenu {
 
 .latest-container .thumbnail .thumbnail-title {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
+  color: #212529;
 }
 
 .latest-container .thumbnail .thumnail-description {
+  margin: 1em 1em;
+  font-size: 14px;
+  color: #212529;
   margin-bottom: 2em;
-  text-align: justify;
 }
 
 .latest-container .thumnail-img img {

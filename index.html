@@ -9,18 +9,19 @@
    <script src="https://kit.fontawesome.com/05c9325a64.js" crossorigin="anonymous"></script>
    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
 <body>
     <!--navigation-->
     <div class="navigation-container">    
         <nav>
             <div class="logo">
-                 <a>FRANCIS <span class="santander">SANTANDER</span></a>
+                 <a href="index.html">FRANCIS <span class="santander">SANTANDER</span></a>
             </div>
             <div class="openMenu"><i class="fa-solid fa-bars"></i></div>
              <ul class="selection">
-                 <li><a href="#" class="active">Home</a></li>
-                 <li><a href="#">My projects</a></li>
+                 <li><a href="index.html" class="active">Home</a></li>
+                 <li><a href="/pages/work.html">My projects</a></li>
                  <li><a href="#">About</a></li>
                  <li><a href="#">Contact</a></li>
                  <div class="closeMenu"><i class="fa-solid fa-xmark"></i></div>
@@ -36,17 +37,18 @@
     <p class="sub-content">We help them to make their lives easier.</p>
         <h1>LET'S BUILD AND WORK TOGETHER!</h1>
      <p class="sub-text">I help people to create their desire website and design for them to convience their customer, especially business websites.</p>
-     <div class="view-work">
-         <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span> work</div>
+     <a class="view-work" href="/pages/work.html">
+         <span class="arrow" href="/pages/work.html"><i class="fa-solid fa-arrow-right-long"></i></span> My work</a>
 </div>
 
 <div class="project-container">
     <h2 class="my-projects">My projects.</h2>
         <p class="check-mywork">Check all my works here, there are 3 different category that I already finish my projects.</p>
 
+            <a href="/pages/work.html#web-application">
              <div class="web-container">
                 <div class="web-icon">
-                    <img src="/img/web icon.svg" alt="">
+                    <span class="iconify" data-icon="mdi:application-braces"></span>
                 </div>
                 <div class="web-title">
                     <h2>Web Application Build</h2>
@@ -55,10 +57,12 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tenetur fugiat earum dolore corrupti, explicabo nulla! Alias facere non vel, repudiandae est praesentium earum enim nulla voluptatum totam reiciendis eius!
                 </div>
             </div>
-
+        </a>
+        
+        <a href="/pages/work.html#front-end">
             <div class="front-container">
                 <div class="front-icon">
-                    <img src="/img/front icon.svg" alt="">
+                    <span class="iconify" data-icon="eos-icons:application"></span>
                 </div>
                 <div class="front-title">
                     <h2>Front-End Website</h2>
@@ -67,10 +71,12 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tenetur fugiat earum dolore corrupti, explicabo nulla! Alias facere non vel, repudiandae est praesentium earum enim nulla voluptatum totam reiciendis eius!
                 </div>
             </div>
+        </a>
 
+        <a href="/pages/work.html#uiux-design">
             <div class="uiux-container">
                 <div class="uiux-icon">
-                    <img src="/img/uiux icon.svg" alt="">
+                    <span class="iconify" data-icon="bi:grid-1x2-fill"></span>
                 </div>
                 <div class="uiux-title">
                     <h2>UI/UX Design</h2>
@@ -79,6 +85,7 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tenetur fugiat earum dolore corrupti, explicabo nulla! Alias facere non vel, repudiandae est praesentium earum enim nulla voluptatum totam reiciendis eius!
                 </div>
             </div>
+        </a>
 
 </div>
 
@@ -127,6 +134,6 @@
      </div> 
 </div> 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="/script/index.js"></script>
+<script src="/script/script.js"></script>
 </body>
 </html>

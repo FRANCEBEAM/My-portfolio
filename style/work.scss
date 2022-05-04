@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$colors:(
+    bg-body: #F8F9FA,
+    bg-hero: #F8F9FA,
+    bg-font: #212529,
+    btn-font: #F8F9FA,
+    bg-nav: #212529,
+    nav-font: #FFFFFF,
+    bg-whfont: #FFFFFF,
+    bg-projects: #EC615B,
+    hg-font: #EC615B,
+    bg-button: #5222D0 ,
+    proj-title: #5222D0
+);
+
+$font: "Lato",sans-serif;
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+}
+
+body{
+    font-family: $font;
+    background: color(bg-body);
+}
+
+
+//logo content
+.logo{
+    margin: 1em;
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    
+    .santander{
+        color: color(hg-font);
+    }
+    a{
+        text-decoration: none;
+        color: color(bg-font);
+    }
+}
+
+//navigation
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .selection{
+      height: 100vh;
+      position: fixed;
+      padding-top: 8em;
+      line-height: 4em;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      align-items: center;
+      background: color(bg-nav);
+      transition: top 1s ease 0s;
+      display: none;
+      list-style: none;
+      font-size: 18px;
+      font-weight: bold;
+   a{
+       color: color(nav-font);
+       text-decoration: none;
+   }
+
+   a:hover{
+       color: color(hg-font);
+   }
+
+   .social{
+    cursor: pointer;
+    color: white;
+    }
+}
+
+.openMenu{
+    margin: 1em;
+    font-size: 2rem;
+    cursor: pointer; 
+}
+.selection .closeMenu{
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 32px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  nav .openMenu {
+    display: block;
+  }
+
+  //web application container
+  .web-container{
+      padding-top: .5em;
+      border: #121212 solid 4px;
+
+      .web-icon{
+          font-size: 2em;
+          display: flex;
+          justify-content: center;
+      }
+
+      .web-title h1{
+          padding-top: .5em;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          color: #5222D0;
+      }
+
+      padding-bottom: .5em;
+  }
+
+    //Front end container
+    .front-container{
+        padding-top: .5em;
+        border: #121212 solid 4px;
+  
+        .front-icon{
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+        }
+  
+        .front-title h1{
+            padding-top: .5em;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            color: #5222D0;
+        }
+  
+        padding-bottom: .5em;
+    }
+
+      //uiux container
+    .uiux-container{
+        padding-top: .5em;
+        border: #121212 solid 4px;
+
+        .uiux-icon{
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+        }
+
+        .uiux-title h1{
+            padding-top: .5em;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            color: #5222D0;
+        }
+
+        padding-bottom: .5em;
+    }
+
+    .thumbnail-container{
+        padding: 0 1em;
+        padding-top: 2em;
+        text-align: center;
+
+        .thumbnail-box{
+            background: #ededed;
+            border-radius: 2em;
+        }
+    
+        .thumbnail-img img{
+            width: 100%;
+            border-radius: 2em;
+        }
+
+        .category h1{
+            padding-top: 1em;
+            font-size: 14px;
+            color: #EC615B;
+            font-weight: bold;
+        }
+
+        .thumbnail-title h1{
+            font-size: 20px;
+            color: #212529;
+            font-weight: bold;
+        }
+
+        .thumbnail-description{  
+            padding: 1em 1em;
+            font-size: 14px;
+            color: #212529;
+        }
+        padding-bottom: 2em;
+    }

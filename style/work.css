@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #F8F9FA;
+}
+
+.logo {
+  margin: 1em;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+}
+
+.logo .santander {
+  color: #EC615B;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #212529;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .selection {
+  height: 100vh;
+  position: fixed;
+  padding-top: 8em;
+  line-height: 4em;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 10;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #212529;
+  -webkit-transition: top 1s ease 0s;
+  transition: top 1s ease 0s;
+  display: none;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav .selection a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+nav .selection a:hover {
+  color: #EC615B;
+}
+
+nav .selection .social {
+  cursor: pointer;
+  color: white;
+}
+
+.openMenu {
+  margin: 1em;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.selection .closeMenu {
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 32px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav .openMenu {
+  display: block;
+}
+
+.web-container {
+  padding-top: .5em;
+  border: #121212 solid 4px;
+  padding-bottom: .5em;
+}
+
+.web-container .web-icon {
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.web-container .web-title h1 {
+  padding-top: .5em;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #5222D0;
+}
+
+.front-container {
+  padding-top: .5em;
+  border: #121212 solid 4px;
+  padding-bottom: .5em;
+}
+
+.front-container .front-icon {
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.front-container .front-title h1 {
+  padding-top: .5em;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #5222D0;
+}
+
+.uiux-container {
+  padding-top: .5em;
+  border: #121212 solid 4px;
+  padding-bottom: .5em;
+}
+
+.uiux-container .uiux-icon {
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.uiux-container .uiux-title h1 {
+  padding-top: .5em;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #5222D0;
+}
+
+.thumbnail-container {
+  padding: 0 1em;
+  padding-top: 2em;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.thumbnail-container .thumbnail-box {
+  background: #ededed;
+  border-radius: 2em;
+}
+
+.thumbnail-container .thumbnail-img img {
+  width: 100%;
+  border-radius: 2em;
+}
+
+.thumbnail-container .category h1 {
+  padding-top: 1em;
+  font-size: 14px;
+  color: #EC615B;
+  font-weight: bold;
+}
+
+.thumbnail-container .thumbnail-title h1 {
+  font-size: 20px;
+  color: #212529;
+  font-weight: bold;
+}
+
+.thumbnail-container .thumbnail-description {
+  padding: 1em 1em;
+  font-size: 14px;
+  color: #212529;
+}
+/*# sourceMappingURL=work.css.map */

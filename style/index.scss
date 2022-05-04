@@ -40,6 +40,10 @@ body{
     .santander{
         color: color(hg-font);
     }
+    a{
+        color: color(bg-font);
+        text-decoration: none;
+    }
 }
 
 //navigation
@@ -126,13 +130,22 @@ nav .selection{
       }
 
       .view-work{
+        font-weight: bold;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
         margin: auto;
-        width: 6em;
+        text-decoration: none;
+        width: 7em;
         text-align: center;
         background: color(bg-button);
         color: color(btn-font);
         border-radius: 1em;
         padding: .8em;
+        justify-content: space-between;
+      }
+      .arrow{
+          justify-content: space-between;
       }
   }
 
@@ -164,11 +177,15 @@ nav .selection{
         }
 
         .web-icon{
-            padding-top: 1em;
-        margin: auto;
-        display: flex;
+            color: #121212;
+            font-size: 4em;
+            padding-top: .4em;
+            margin: auto;
+            display: flex;
             justify-content: center;
         }
+
+
         .web-title{
             margin-top: 1em;
             text-align: center;
@@ -185,6 +202,9 @@ nav .selection{
             text-align: center;
             font-size: 14px;
         }
+        a{
+            text-decoration: none;
+        }
 
         // Front-end website 
         .front-container{
@@ -194,9 +214,11 @@ nav .selection{
         }
 
         .front-icon{
-            padding-top: 1em;
-        margin: auto;
-        display: flex;
+            color: #121212;
+            font-size: 4em;
+            padding-top: .4em;
+            margin: auto;
+            display: flex;
             justify-content: center;
         }
         .front-title{
@@ -223,9 +245,11 @@ nav .selection{
         }
 
         .uiux-icon{
-            padding-top: 1em;
-        margin: auto;
-        display: flex;
+            color: #121212;
+            font-size: 4em;
+            padding-top: .4em;
+            margin: auto;
+            display: flex;
             justify-content: center;
         }
         .uiux-title{
@@ -249,9 +273,11 @@ nav .selection{
         padding-bottom: 4em;
     }
 
+
+    //latest work
     .latest-container{
         padding: 2em 1em;
-
+        color: #212529;
         .latest-container{
             font-size: 20px;
             font-weight: bold;
@@ -274,11 +300,14 @@ nav .selection{
             }
             .thumbnail-title{
                 font-weight: bold;
-                font-size: 16px;
+                font-size: 20px;
+                color: #212529;
             }
             .thumnail-description{
+                margin: 1em 1em;
+                font-size: 14px;
+                color: #212529;
                 margin-bottom: 2em;
-                text-align: justify;
             }
         }
 
