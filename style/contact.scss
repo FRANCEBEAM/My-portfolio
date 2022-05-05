@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$colors:(
+    bg-body: #F8F9FA,
+    bg-hero: #F8F9FA,
+    bg-font: #212529,
+    btn-font: #F8F9FA,
+    bg-nav: #212529,
+    nav-font: #FFFFFF,
+    bg-whfont: #FFFFFF,
+    bg-projects: #EC615B,
+    hg-font: #EC615B,
+    bg-button: #5222D0 ,
+    proj-title: #5222D0
+);
+
+$font: "Lato",sans-serif;
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+}
+
+body{
+    font-family: $font;
+    background: color(bg-body);
+}
+
+
+//logo content
+.logo{
+    margin: 1em;
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    
+    .santander{
+        color: color(hg-font);
+    }
+    a{
+        color: color(bg-font);
+        text-decoration: none;
+    }
+}
+
+//navigation
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .selection{
+      height: 100vh;
+      position: fixed;
+      padding-top: 8em;
+      line-height: 4em;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      align-items: center;
+      background: color(bg-nav);
+      transition: top 1s ease 0s;
+      display: none;
+      list-style: none;
+      font-size: 18px;
+      font-weight: bold;
+   a{
+       color: color(nav-font);
+       text-decoration: none;
+   }
+
+   a:hover{
+       color: color(hg-font);
+   }
+
+   .social{
+    cursor: pointer;
+    color: white;
+    }
+}
+
+.openMenu{
+    margin: 1em;
+    font-size: 2rem;
+    cursor: pointer; 
+}
+.selection .closeMenu{
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 32px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  nav .openMenu {
+    display: block;
+  }
+
+
+  //contact content
+  .contact-container{
+    padding: 0 1em;
+    color: #212529;
+
+    .contact-title h1{
+        padding-top: 2em;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    form{
+        padding-top: 3em;
+        
+        label{
+            font-size: 17px;
+            font-weight: bold;
+        }
+        input{
+            margin-bottom: 1.7em;
+            border: #E8E8E8 solid;
+            background: #E8E8E8;
+            padding: .4em;
+            width: 100%;
+            border-radius: 1em;
+        }
+        textarea{
+            border: #E8E8E8 solid;
+            background: #E8E8E8;
+            width: 100%;
+        }
+    }
+
+    .btn-container{
+        padding-top: 2em;
+
+    }
+
+    .btnSend{
+        text-align: center;
+        padding: .7em 1em;
+        background: #5222D0;
+        color: #E8E8E8;
+        font-weight: bold;
+    }
+
+    .social-contact{
+       padding-top: 3em;
+        .messenger{
+            padding-bottom: 1em;
+        }
+        .gmail{
+            padding-bottom: 1em;
+        }
+        .phone{
+            padding-bottom: 7em;
+        }
+    }
+    
+  }

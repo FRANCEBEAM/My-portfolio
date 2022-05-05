@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$colors:(
+    bg-body: #F8F9FA,
+    bg-hero: #F8F9FA,
+    bg-font: #212529,
+    btn-font: #F8F9FA,
+    bg-nav: #212529,
+    nav-font: #FFFFFF,
+    bg-whfont: #FFFFFF,
+    bg-projects: #EC615B,
+    hg-font: #EC615B,
+    bg-button: #5222D0 ,
+    proj-title: #5222D0
+);
+
+$font: "Lato",sans-serif;
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+}
+
+body{
+    font-family: $font;
+    background: color(bg-body);
+}
+
+
+//logo content
+.logo{
+    margin: 1em;
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    
+    .santander{
+        color: color(hg-font);
+    }
+    a{
+        color: color(bg-font);
+        text-decoration: none;
+    }
+}
+
+//navigation
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .selection{
+      height: 100vh;
+      position: fixed;
+      padding-top: 8em;
+      line-height: 4em;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      align-items: center;
+      background: color(bg-nav);
+      transition: top 1s ease 0s;
+      display: none;
+      list-style: none;
+      font-size: 18px;
+      font-weight: bold;
+   a{
+       color: color(nav-font);
+       text-decoration: none;
+   }
+
+   a:hover{
+       color: color(hg-font);
+   }
+
+   .social{
+    cursor: pointer;
+    color: white;
+    }
+}
+
+.openMenu{
+    margin: 1em;
+    font-size: 2rem;
+    cursor: pointer; 
+}
+.selection .closeMenu{
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 32px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  nav .openMenu {
+    display: block;
+  }
+
+  //profile
+  .profile{
+      display: flex;  
+      justify-content: center;
+      padding-top: 5em;
+  }
+
+  .about{
+      padding: 0 1em;
+  }
+
+  .about-head{
+    display: flex;
+    padding-top: 4em;
+    h1{
+      display: flex;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .iconify{
+        margin-left: 1em;
+        justify-content: space-between;
+        font-size: 1.4em;
+    }
+  }
+
+  //about description
+  .about-description{
+      font-size: 14px;
+      line-height: 1.8em;
+      .hello{
+          padding-top: 1.7em;
+      }
+
+      .my{
+          padding-top: 1.7em;
+      }
+  }
+
+  //about social
+  .about-social{
+      padding-top: 1.5em;
+  
+      .iconify{
+          margin: 0 .4em;
+          justify-content: space-between;
+          font-size: 2em;
+      }
+  }

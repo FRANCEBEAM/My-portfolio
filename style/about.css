@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #F8F9FA;
+}
+
+.logo {
+  margin: 1em;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+}
+
+.logo .santander {
+  color: #EC615B;
+}
+
+.logo a {
+  color: #212529;
+  text-decoration: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .selection {
+  height: 100vh;
+  position: fixed;
+  padding-top: 8em;
+  line-height: 4em;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 10;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #212529;
+  -webkit-transition: top 1s ease 0s;
+  transition: top 1s ease 0s;
+  display: none;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav .selection a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+nav .selection a:hover {
+  color: #EC615B;
+}
+
+nav .selection .social {
+  cursor: pointer;
+  color: white;
+}
+
+.openMenu {
+  margin: 1em;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.selection .closeMenu {
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 32px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav .openMenu {
+  display: block;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5em;
+}
+
+.about {
+  padding: 0 1em;
+}
+
+.about-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 4em;
+}
+
+.about-head h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about-head .iconify {
+  margin-left: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.4em;
+}
+
+.about-description {
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+.about-description .hello {
+  padding-top: 1.7em;
+}
+
+.about-description .my {
+  padding-top: 1.7em;
+}
+
+.about-social {
+  padding-top: 1.5em;
+}
+
+.about-social .iconify {
+  margin: 0 .4em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 2em;
+}
+/*# sourceMappingURL=about.css.map */

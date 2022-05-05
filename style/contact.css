@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #F8F9FA;
+}
+
+.logo {
+  margin: 1em;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+}
+
+.logo .santander {
+  color: #EC615B;
+}
+
+.logo a {
+  color: #212529;
+  text-decoration: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .selection {
+  height: 100vh;
+  position: fixed;
+  padding-top: 8em;
+  line-height: 4em;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 10;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #212529;
+  -webkit-transition: top 1s ease 0s;
+  transition: top 1s ease 0s;
+  display: none;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav .selection a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+nav .selection a:hover {
+  color: #EC615B;
+}
+
+nav .selection .social {
+  cursor: pointer;
+  color: white;
+}
+
+.openMenu {
+  margin: 1em;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.selection .closeMenu {
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 32px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav .openMenu {
+  display: block;
+}
+
+.contact-container {
+  padding: 0 1em;
+  color: #212529;
+}
+
+.contact-container .contact-title h1 {
+  padding-top: 2em;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact-container p {
+  font-size: 14px;
+}
+
+.contact-container form {
+  padding-top: 3em;
+}
+
+.contact-container form label {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.contact-container form input {
+  margin-bottom: 1.7em;
+  border: #E8E8E8 solid;
+  background: #E8E8E8;
+  padding: .4em;
+  width: 100%;
+  border-radius: 1em;
+}
+
+.contact-container form textarea {
+  border: #E8E8E8 solid;
+  background: #E8E8E8;
+  width: 100%;
+}
+
+.contact-container .btn-container {
+  padding-top: 2em;
+}
+
+.contact-container .btnSend {
+  text-align: center;
+  padding: .7em 1em;
+  background: #5222D0;
+  color: #E8E8E8;
+  font-weight: bold;
+}
+
+.contact-container .social-contact {
+  padding-top: 3em;
+}
+
+.contact-container .social-contact .messenger {
+  padding-bottom: 1em;
+}
+
+.contact-container .social-contact .gmail {
+  padding-bottom: 1em;
+}
+
+.contact-container .social-contact .phone {
+  padding-bottom: 7em;
+}
+/*# sourceMappingURL=contact.css.map */
