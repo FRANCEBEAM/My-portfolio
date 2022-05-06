@@ -108,6 +108,7 @@ nav .selection{
       margin-top: 4em;
 
       .sub-content{
+         letter-spacing: 1px;
           text-align: center;
           font-size: 12px;
           font-weight: bold;
@@ -123,7 +124,7 @@ nav .selection{
       }
 
      .sub-text{
-          margin: 2em 4em;
+          margin: 2em 2em;
           font-size: 12;
           text-align: center;   
           color: color(bg-font);    
@@ -319,3 +320,67 @@ nav .selection{
         
     }
 
+    //for tablet view
+
+    @media screen and (min-width: 768px){
+        .hero-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "hero-container devImage"
+        }
+         
+            .hero-container{
+               
+                .sub-content{
+                    margin: 0;
+                    padding: 0 1.9em;
+                    grid-area: hero-container;
+                    letter-spacing: 1px;
+                    font-size: 14px;
+                    text-align: left;
+                }
+              
+                .lets{
+                    margin: 0;
+                    padding: 0 .7em;
+                    padding-top: .7em;
+                    grid-area: hero-container;
+                    font-size: 36px;
+                    font-weight: bold;
+                    text-align: left;
+                }
+    
+                .sub-text{
+                    margin: 0;
+                    padding: 0 2em;
+                    padding-top: 9em;
+                    grid-area: hero-container;
+                    font-size: 14px;
+                    text-align: left;
+                }
+
+                a{
+                   grid-area: hero-container;
+                   margin: 0;
+                   align-items: flex-start; 
+                   
+                }
+
+                .devImage{
+                    grid-area: devImage;
+                    background: url(/img/weDeveloper.svg);
+                    background-repeat: no-repeat;
+                    height: 30vh;
+                    width: 100%;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+            }
+            
+
+        }  
+        
+ 
