@@ -135,23 +135,27 @@ nav .selection{
         font-size: 14px;
         display: flex;
         justify-content: center;
-        margin: auto;
+        margin: 0 auto;
         text-decoration: none;
         width: 7em;
         text-align: center;
         background: color(bg-button);
         color: color(btn-font);
-        border-radius: 1em;
+        border-radius: .5em;
         padding: .8em;
         justify-content: space-between;
       }
-      .arrow{
-          justify-content: space-between;
-      }
+  }
+
+  .devImage img{
+      padding: 2em 1em;
+
+      display: flex;
+      width: 100%;
   }
 
     .project-container{
-        margin-top: 4em;
+        margin-top: 1em;
         background: color(bg-projects);
         width: 100%;
         padding: 0 1em;
@@ -243,6 +247,7 @@ nav .selection{
         .uiux-container{
             border: #121212 solid .3em;
             background: color(bg-body);
+            margin-bottom: 2em;
         }
 
         .uiux-icon{
@@ -326,15 +331,16 @@ nav .selection{
         .hero-container{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
             grid-template-areas: 
-            "hero-container devImage"
+            "hero-container devImage";
+            
         }
          
             .hero-container{
                
                 .sub-content{
                     margin: 0;
+                    display: inline-flex;
                     padding: 0 1.9em;
                     grid-area: hero-container;
                     letter-spacing: 1px;
@@ -343,6 +349,7 @@ nav .selection{
                 }
               
                 .lets{
+                    display: inline-flex;
                     margin: 0;
                     padding: 0 .7em;
                     padding-top: .7em;
@@ -359,28 +366,56 @@ nav .selection{
                     grid-area: hero-container;
                     font-size: 14px;
                     text-align: left;
+                    font-weight: 500;
+                    line-height: 1.5em;
                 }
 
-                a{
+                .btn-work{
+                    display: block;
+                    padding-top: 14em;
+                    padding-left: 2em;
+                   justify-self: left;
                    grid-area: hero-container;
-                   margin: 0;
-                   align-items: flex-start; 
-                   
                 }
 
                 .devImage{
                     grid-area: devImage;
-                    background: url(/img/weDeveloper.svg);
-                    background-repeat: no-repeat;
-                    height: 30vh;
                     width: 100%;
-                    background-position: center;
-                    background-size: cover;
                 }
-
             }
-            
 
-        }  
-        
- 
+
+
+            .project-box{
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+            }
+                
+            .web-container{
+                margin: 10px;
+                width: 220px;
+                h2{
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
+
+            .front-container{
+                margin: 10px;
+                width: 220px;
+                h2{
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
+
+            .uiux-container{
+                margin: 10px;
+                width: 220px;
+                h2{
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
+}

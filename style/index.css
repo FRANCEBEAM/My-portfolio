@@ -133,27 +133,29 @@ nav .openMenu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: auto;
+  margin: 0 auto;
   text-decoration: none;
   width: 7em;
   text-align: center;
   background: #5222D0;
   color: #F8F9FA;
-  border-radius: 1em;
+  border-radius: .5em;
   padding: .8em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.hero-container .arrow {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.devImage img {
+  padding: 2em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 .project-container {
-  margin-top: 4em;
+  margin-top: 1em;
   background: #EC615B;
   width: 100%;
   padding: 0 1em;
@@ -253,6 +255,7 @@ nav .openMenu {
 .project-container .uiux-container {
   border: #121212 solid .3em;
   background: #F8F9FA;
+  margin-bottom: 2em;
 }
 
 .project-container .uiux-icon {
@@ -339,12 +342,13 @@ nav .openMenu {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
         grid-template-areas: "hero-container devImage";
   }
   .hero-container .sub-content {
     margin: 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     padding: 0 1.9em;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -354,6 +358,9 @@ nav .openMenu {
     text-align: left;
   }
   .hero-container .lets {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     margin: 0;
     padding: 0 .7em;
     padding-top: .7em;
@@ -373,26 +380,58 @@ nav .openMenu {
     grid-area: hero-container;
     font-size: 14px;
     text-align: left;
+    font-weight: 500;
+    line-height: 1.5em;
   }
-  .hero-container a {
+  .hero-container .btn-work {
+    display: block;
+    padding-top: 14em;
+    padding-left: 2em;
+    -ms-grid-column-align: left;
+        justify-self: left;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: hero-container;
-    margin: 0;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   .hero-container .devImage {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: devImage;
-    background: url(/img/weDeveloper.svg);
-    background-repeat: no-repeat;
-    height: 30vh;
     width: 100%;
-    background-position: center;
-    background-size: cover;
+  }
+  .project-box {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .web-container {
+    margin: 10px;
+    width: 220px;
+  }
+  .web-container h2 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .front-container {
+    margin: 10px;
+    width: 220px;
+  }
+  .front-container h2 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .uiux-container {
+    margin: 10px;
+    width: 220px;
+  }
+  .uiux-container h2 {
+    font-size: 16px;
+    font-weight: bold;
   }
 }
 /*# sourceMappingURL=index.css.map */
