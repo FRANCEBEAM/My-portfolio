@@ -284,6 +284,7 @@ nav .selection{
     .latest-container{
         padding: 2em 1em;
         color: #212529;
+
         .latest-container{
             font-size: 20px;
             font-weight: bold;
@@ -335,7 +336,8 @@ nav .selection{
             "hero-container devImage";
             
         }
-         
+
+        //hero container content
             .hero-container{
                
                 .sub-content{
@@ -384,6 +386,16 @@ nav .selection{
                 }
             }
 
+        //my projects content
+            .my-projects{
+                padding: 0 1em;
+                justify-content: left;
+            }
+
+            .check-mywork{
+                padding: 0 1.6em;
+                justify-content: left;
+            }
 
 
             .project-box{
@@ -393,7 +405,7 @@ nav .selection{
             }
                 
             .web-container{
-                margin: 10px;
+                margin: 0 1em;
                 width: 220px;
                 h2{
                     font-size: 16px;
@@ -402,7 +414,7 @@ nav .selection{
             }
 
             .front-container{
-                margin: 10px;
+                margin: 0 1em;
                 width: 220px;
                 h2{
                     font-size: 16px;
@@ -411,11 +423,62 @@ nav .selection{
             }
 
             .uiux-container{
-                margin: 10px;
+                margin: 0 1em;
                 width: 220px;
                 h2{
                     font-size: 16px;
                     font-weight: bold;
+                }
+            }
+
+
+        //Latest work content
+
+            .latest-works{
+                padding: 0 1em;
+
+            }
+
+            .new-project{
+                padding: 0 1.6em;
+                justify-content: left;
+            }
+
+            .thumbnail-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .thumbnail{     
+                margin: 0 1em;
+
+                .sub-title h4{
+                    padding: 0 1.5em;
+                    display: flex;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                .thumbnail-title  h3{
+                    padding: 0 1em;
+                    display: flex;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                .thumnail-description{
+                    padding: 0 .5em;
+                    display: flex;
+                    text-align: left;
+                    font-size: 14px;
+                   
+                }
+
+                .thumnail-img img{
+                 display: flex;
+                 width: 100%;
+                 height: 20vh;
+                 margin: 4em auto;
+
                 }
             }
 }
