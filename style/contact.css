@@ -163,4 +163,16 @@ nav .openMenu {
 .contact-container .social-contact .phone {
   padding-bottom: 7em;
 }
+
+@media screen and (min-width: 768px) {
+  .contact-container {
+    padding: 0 7em;
+  }
+  .contact-container .contact-title h1 {
+    font-size: 24px;
+  }
+  .contact-container .contact-title p {
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=contact.css.map */

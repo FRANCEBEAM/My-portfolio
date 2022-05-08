@@ -13,7 +13,7 @@ body {
 .logo {
   margin: 1em;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 17px;
   display: block;
 }
 
@@ -109,6 +109,7 @@ nav .openMenu {
 
 .about {
   padding: 0 1em;
+  color: #212529;
 }
 
 .about-head {
@@ -119,6 +120,7 @@ nav .openMenu {
 }
 
 .about-head h1 {
+  color: #212529;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,5 +159,28 @@ nav .openMenu {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .profile img {
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  .about {
+    padding: 0 4em;
+  }
+  .about .about-head h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .about .iconify {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  .about .about-description {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=about.css.map */

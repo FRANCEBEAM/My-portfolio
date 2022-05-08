@@ -127,6 +127,7 @@ nav .selection{
 
     //Front end container
     .front-container{
+
         padding-top: .5em;
         border: #121212 solid 4px;
   
@@ -202,5 +203,32 @@ nav .selection{
             font-size: 14px;
             color: #212529;
         }
+        a{
+            text-decoration: none;
+        }
         padding-bottom: 2em;
     }
+
+
+    @media screen and (min-width: 768px){
+        a{
+            text-decoration: none;
+        }
+    .thumbnail-webapp{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .thumbnail-frontend{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .thumbnail-uiux{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+

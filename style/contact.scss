@@ -168,3 +168,18 @@ nav .selection{
     }
     
   }
+
+  @media screen and (min-width: 768px){
+      .contact-container{
+          padding: 0 7em;
+
+          .contact-title h1{
+            font-size: 24px;
+        }
+        .contact-title p{
+            font-size: 14px;
+        }
+      }
+
+
+  }

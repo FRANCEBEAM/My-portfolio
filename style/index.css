@@ -13,7 +13,7 @@ body {
 .logo {
   margin: 1em;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 17px;
   display: block;
 }
 
@@ -294,6 +294,10 @@ nav .openMenu {
   color: #212529;
 }
 
+.latest-container a {
+  text-decoration: none;
+}
+
 .latest-container .latest-container {
   font-size: 20px;
   font-weight: bold;
@@ -317,13 +321,13 @@ nav .openMenu {
   font-weight: bold;
 }
 
-.latest-container .thumbnail .thumbnail-title {
+.latest-container .thumbnail .thumbnail-title h3 {
   font-weight: bold;
   font-size: 20px;
   color: #212529;
 }
 
-.latest-container .thumbnail .thumnail-description {
+.latest-container .thumbnail .thumnail-description p {
   margin: 1em 1em;
   font-size: 14px;
   color: #212529;
@@ -449,10 +453,13 @@ nav .openMenu {
     padding: 0 1em;
   }
   .new-project {
-    padding: 0 1.6em;
+    padding: 0 1.8em;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
+    text-align: left;
+    width: 60%;
+    padding-bottom: 2em;
   }
   .thumbnail-container {
     display: -ms-grid;
@@ -462,8 +469,12 @@ nav .openMenu {
   }
   .thumbnail {
     margin: 0 1em;
+    width: 320px;
   }
-  .thumbnail .sub-title h4 {
+  .thumbnail a {
+    text-decoration: none;
+  }
+  .sub-title h4 {
     padding: 0 1.5em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -471,15 +482,16 @@ nav .openMenu {
     font-size: 14px;
     font-weight: bold;
   }
-  .thumbnail .thumbnail-title h3 {
+  .thumbnail-title h3 {
     padding: 0 1em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 20px;
     font-weight: bold;
+    text-align: left;
   }
-  .thumbnail .thumnail-description {
+  .thumnail-description {
     padding: 0 .5em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -487,13 +499,9 @@ nav .openMenu {
     text-align: left;
     font-size: 14px;
   }
-  .thumbnail .thumnail-img img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
+  .thumnail-img img {
     height: 20vh;
-    margin: 4em auto;
+    margin: 1em auto;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -34,7 +34,7 @@ body{
 .logo{
     margin: 1em;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 17px;
     display: block;
     
     .santander{
@@ -112,12 +112,14 @@ nav .selection{
 
   .about{
       padding: 0 1em;
+      color: #212529;
   }
 
   .about-head{
     display: flex;
     padding-top: 4em;
     h1{
+      color: #212529;
       display: flex;
       font-size: 20px;
       font-weight: bold;
@@ -152,3 +154,36 @@ nav .selection{
           font-size: 2em;
       }
   }
+
+
+  //media queries
+  @media screen and (min-width: 768px){
+
+    .profile img{
+        vertical-align: middle;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+
+    .about{
+
+        padding: 0 4em;
+
+        .about-head h1{
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .iconify{
+            font-size: 30px;
+          
+            margin-left: 10px;
+        }
+        
+        .about-description{
+            font-size: 16px;
+        }
+    }
+
+  }
+

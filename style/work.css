@@ -204,4 +204,32 @@ nav .openMenu {
   font-size: 14px;
   color: #212529;
 }
+
+.thumbnail-container a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  a {
+    text-decoration: none;
+  }
+  .thumbnail-webapp {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .thumbnail-frontend {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .thumbnail-uiux {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
 /*# sourceMappingURL=work.css.map */
