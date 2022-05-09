@@ -491,44 +491,48 @@ nav .selection{
             margin: 1em auto;
         }
 
+        // laptop view
+        @media screen and (min-width: 920px){
 
+            .navigation-container{
+                padding: 0 4.8em;
+            }
 
+            .openMenu i{
+                display: none;
+            }
 
+            .closeMenu i{
+                display: none;
+            }
 
-            // .thumbnail-container{
-            //     display: grid;
-            //     grid-template-columns: 1fr 1fr;
-            // }
+            nav .selection{
+                display: contents;
+                a{
+                    
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #212529;
+                }
+            }
 
-            // .thumbnail{     
-            //     cursor: pointer;
+            .social i{
+                display: none;
+            }
 
-            //     .sub-title h4{
-            //         padding: 0 1.5em;
-            //         display: flex;
-            //         font-size: 14px;
-            //         font-weight: bold;
-            //     }
-            //     .thumbnail-title  h3{
-            //         padding: 0 1em;
-            //         display: flex;
-            //         font-size: 20px;
-            //         font-weight: bold;
-            //     }
+            .hero-container{
+                padding: 0 4em;
+            }
+            
+            .project-container{
+                padding: 0 4.8em;
+                height:360px;
+                position: relative;
+            }
 
-            //     .thumnail-description{
-            //         padding: 0 .5em;
-            //         display: flex;
-            //         text-align: left;
-            //         font-size: 14px;
-                   
-            //     }
-
-                // .thumnail-img img{
-                //  display: flex;
-                //  height: 20vh;
-                //  margin: 1em auto;
-
-                // }
-            // }
+            .latest-container{
+                margin-top: 220px;
+                padding: 0 4.8em;
+            }
+        }
 }

@@ -504,4 +504,39 @@ nav .openMenu {
     margin: 1em auto;
   }
 }
+
+@media screen and (min-width: 768px) and (min-width: 920px) {
+  .navigation-container {
+    padding: 0 4.8em;
+  }
+  .openMenu i {
+    display: none;
+  }
+  .closeMenu i {
+    display: none;
+  }
+  nav .selection {
+    display: contents;
+  }
+  nav .selection a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #212529;
+  }
+  .social i {
+    display: none;
+  }
+  .hero-container {
+    padding: 0 4em;
+  }
+  .project-container {
+    padding: 0 4.8em;
+    height: 360px;
+    position: relative;
+  }
+  .latest-container {
+    margin-top: 220px;
+    padding: 0 4.8em;
+  }
+}
 /*# sourceMappingURL=index.css.map */
