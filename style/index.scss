@@ -534,5 +534,109 @@ nav .selection{
                 margin-top: 220px;
                 padding: 0 4.8em;
             }
+
+            .thumbnail-container{
+                display: flex;
+                flex-direction: column;
+            }
+
+           .thumbnail a{
+               display: flex;
+               flex-direction: row;
+            }
+
+            .thumbnail{
+                width: 100%;
+
+                .thumnail-img img{
+                    width: 150%;
+                    border-radius: 1em;
+                }
+
+                .sub-title h4{
+                    margin-top: 2em;
+                    margin-left: 9em;
+                }
+    
+                .thumbnail-title h3{
+                    margin-left: 6.4em;
+                }
+
+
+                a{
+                    cursor: default;
+                    pointer-events: none;
+                    .thumnail-img{
+                        width: 60%;
+                    }
+                   
+                    background: #f2f2f2;
+                }
+
+                                .btn-visit{
+                    background: #5222D0;
+                    width: 102px;
+                    color: #F8F9FA;
+                    font-weight: bold;
+                    font-size: 7px;
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 auto;
+                    background: color(bg-button);
+                    color: color(btn-font);
+                    border-radius: .5em;
+                    padding: .2em;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    margin-right: 26em;
+    
+                    .fa-solid{
+                        justify-content: space-between;
+                        margin: .5em;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .thumnail-description{
+                margin-top: 1em;
+                margin-left: 9em;
+                }
+
+
+            // .sub-title h4{
+
+            //     margin-top: 2em;
+            //     margin-left: 15em;
+            // }
+
+            // .thumbnail-title h3{
+            //     margin-top: 2em;
+            //     margin-left: 10.7em;
+            // }
+
+            // .thumnail-description p{
+            
+            //     margin-left: 25em;
+            // }
+
+            // .thumnail-img img{
+            //     display: flex;
+            // }
+
+            // .sub-title{
+            //     display: flex;
+            // }
+
+            // .thumbnail-title{
+            //     display: flex;
+            // }
+
+            // .thumnail-description{
+            //     display: flex;
+            // }
+
+            
         }
 }
