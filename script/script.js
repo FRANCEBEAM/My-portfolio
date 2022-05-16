@@ -22,16 +22,3 @@ function show(){
 function close(){
     selection.style.top = '-100%';
 }
-
-// swiper content
-var swiper = new Swiper('.swiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 40,
-    centeredSlide: true,
-    loop: true,
-    grabCursor: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });

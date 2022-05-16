@@ -185,7 +185,7 @@ nav .selection{
             border-radius: 2em;
         }
 
-        .category h1{
+        .category h2{
             padding-top: 1em;
             font-size: 14px;
             color: #EC615B;
@@ -229,6 +229,169 @@ nav .selection{
         grid-template-columns: 1fr 1fr;
     }
 
+    @media screen and (min-width: 920px){
+        .navigation-container{
+            padding: 0 4.8em;
+        }
+
+        .openMenu i{
+            display: none;
+        }
+
+        .closeMenu i{
+            display: none;
+        }
+
+        nav .selection{
+            display: contents;
+            a{
+                
+                font-weight: 500;
+                font-size: 14px;
+                color: #212529;
+            }
+        }
+
+        .social i{
+            display: none;
+        }
+
+        .workproject-container{
+            margin-top: 5em;
+        }
+
+
+        //web application content
+        .thumbnail-webapp{
+            margin-top: 4em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .thumbnail-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .thumbnail-box{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .thumbnail-box{
+            .category{
+                text-align: left;
+                h1{
+                    margin-top: .4em;
+                    margin-left: 1em;
+                    font-size: 20px;
+               
+                }
+                h2{
+                    margin-top: 2em;
+                    margin-left: 1.4em;
+                    font-size: 16px;
+                }
+                p{
+                    margin-left: .5em;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        //front-end website content
+        .front-container{
+            margin-top: 3em;
+        }
+
+
+        .thumbnail-frontend{
+            margin-top: 4em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .thumbnail-frontend{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .thumbnail-box{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .thumbnail-box{
+            .category{
+                text-align: left;
+                h1{
+                    margin-top: .4em;
+                    margin-left: 1em;
+                    font-size: 20px;
+               
+                }
+                h2{
+                    margin-top: 2em;
+                    margin-left: 1.4em;
+                    font-size: 16px;
+                }
+                p{
+                    margin-left: .5em;
+                    font-size: 14px;
+                }
+            }
+        }
+
+       .thumbnail-img{
+            width: 100%;
+        }
+
+        //uiux design content
+        .uiux-container{
+            margin-top: 3em;
+        }
+
+
+        .thumbnail-uiux{
+            margin-top: 4em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .thumbnail-uiux{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .thumbnail-box{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .thumbnail-box{
+            .category{
+                text-align: left;
+                h1{
+                    margin-top: .4em;
+                    margin-left: 1em;
+                    font-size: 20px;
+               
+                }
+                h2{
+                    margin-top: 2em;
+                    margin-left: 1.4em;
+                    font-size: 16px;
+                }
+                p{
+                    margin-left: .5em;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        
+    }
 }
+
 
 

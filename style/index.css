@@ -535,8 +535,9 @@ nav .openMenu {
     position: relative;
   }
   .latest-container {
-    margin-top: 220px;
+    margin-top: 240px;
     padding: 0 4.8em;
+    margin-bottom: 5em;
   }
   .thumbnail-container {
     display: -webkit-box;
@@ -564,52 +565,30 @@ nav .openMenu {
     border-radius: 1em;
   }
   .thumbnail .sub-title h4 {
-    margin-top: 2em;
+    margin-top: 3em;
     margin-left: 9em;
   }
   .thumbnail .thumbnail-title h3 {
+    margin-top: .2em;
     margin-left: 6.4em;
   }
-  .thumbnail a {
+  .thumbnail .thumnail-img img {
     cursor: default;
     pointer-events: none;
+  }
+  .thumbnail a {
     background: #f2f2f2;
   }
-  .thumbnail a .thumnail-img {
+  .thumbnail .thumbnail {
+    background-size: cover;
+    width: 200%;
+  }
+  .thumbnail .thumnail-img {
+    margin-top: 1.5em;
+    margin-left: 1em;
     width: 60%;
   }
-  .thumbnail .btn-visit {
-    background: #5222D0;
-    width: 102px;
-    color: #F8F9FA;
-    font-weight: bold;
-    font-size: 7px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 auto;
-    background: #5222D0;
-    color: #F8F9FA;
-    border-radius: .5em;
-    padding: .2em;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-right: 26em;
-  }
-  .thumbnail .btn-visit .fa-solid {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: .5em;
-    font-size: 15px;
-  }
-  .thumnail-description {
+  .thumbnail .thumnail-description {
     margin-top: 1em;
     margin-left: 9em;
   }
