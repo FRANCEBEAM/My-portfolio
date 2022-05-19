@@ -328,8 +328,132 @@ nav .selection{
             width: 100%;
             margin-bottom: 2em;
         }
-        
     }
+
+        //about me section
+
+        //profile
+        .profile img{
+            width: 150px;
+            border: #FFFFFF 3px solid;
+            height: 150px;
+            border-radius: 50%;
+            margin: 3em auto;
+            justify-content: center;
+            display: flex;
+        }
+
+        .about{
+            padding: 1em 1em;
+            color: #FFFFFF;
+            background: #212529;
+        }
+
+        .about-head{
+        display: flex;
+
+        h1{
+            color: #FFFFFF;
+            display: flex;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .iconify{
+            margin-left: 1em;
+            justify-content: space-between;
+            font-size: 1.4em;
+        }
+        }
+
+        //about description
+        .about-description{
+            font-size: 14px;
+            line-height: 1.8em;
+            .hello{
+                padding-top: 1.7em;
+            }
+
+            .my{
+                padding-top: 1.7em;
+            }
+        }
+
+        //about social
+        .about-social{
+            padding-top: 2em;
+
+            .iconify{
+                margin: 10px;
+                justify-content: space-between;
+                font-size: 1.7em;
+            }
+        }
+
+        //contact section
+  .contact-container{
+    margin-top: 2em;
+    padding: 0 1em;
+    color: #212529;
+
+    .contact-title h1{
+        padding-top: 2em;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    form{
+        padding-top: 4em;
+        
+        label{
+            font-size: 17px;
+            font-weight: bold;
+        }
+        input{
+            margin-bottom: 1.7em;
+            border: #E8E8E8 solid;
+            background: #E8E8E8;
+            padding: .4em;
+            width: 100%;
+            border-radius: .4em;
+        }
+        textarea{
+            border: #E8E8E8 solid;
+            background: #E8E8E8;
+            width: 100%;
+        }
+    }
+
+    .btn-container{
+        padding-top: 2em;
+
+    }
+
+    .btnSend{
+        text-align: center;
+        padding: .7em 1em;
+        background: #5222D0;
+        color: #E8E8E8;
+        font-weight: bold;
+    }
+
+    .social-contact{
+       padding-top: 3em;
+        .messenger{
+            padding-bottom: 1em;
+        }
+        .gmail{
+            padding-bottom: 1em;
+        }
+        .phone{
+            padding-bottom: 7em;
+        }
+    }
+    
+  }
 
     //for tablet view
 
@@ -491,6 +615,150 @@ nav .selection{
             margin: 1em auto;
         }
 
+        
+        //about me section
+        .about{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "img about";
+            padding: 1em 1em;
+            color: #FFFFFF;
+            background: #212529;
+        }
+        .profile img{
+            width: 60%;
+            border: #FFFFFF 3px solid;
+            height:  60%;
+            border-radius:unset;
+            justify-content: center;
+            display: flex;
+            grid-area: img;
+        }
+        .about-head{
+            padding-top: 4em;
+            display: flex;
+
+        h1{
+            color: #FFFFFF;
+            display: flex;
+            font-size: 24px;
+            font-weight: bold;
+            grid-area: about;
+        }
+        .iconify{
+            margin-left: 1em;
+            justify-content: space-between;
+            font-size: 1.4em;
+        }
+        }
+
+        //about description
+        .about-description{
+            font-size: 14px;
+            line-height: 1.8em;
+            grid-area: about;
+            .hello{
+                padding-top: 1.7em;
+            }
+
+            .my{
+                padding-top: 1.7em;
+            }
+        }
+
+        //about social
+        .about-social{
+            padding-top: 2em;
+
+            .iconify{
+                margin: 10px;
+                justify-content: space-between;
+                font-size: 1.7em;
+            }
+        }
+
+    //contact section
+  .contact-container{
+    margin-top: 4em;
+    padding: 0 2em;
+    color: #212529;
+    display: grid;
+    grid-template-areas: "form social";
+
+    .contact-title{
+
+        grid-area: form;
+    }
+    .contact-title h1{
+        padding: 0 1em;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    p{
+        padding: 0 1.9em;
+        margin-top: 1em;
+        font-size: 14px;
+        grid-area: form;
+    }
+
+    form{
+        padding: 0 1em;
+        margin-top: 5em;
+        grid-area: form;
+        padding-top: 4em;
+        display: flex;
+        flex-direction: column;
+        
+        label{
+            font-size: 17px;
+            font-weight: bold;
+        }
+        input{
+            margin-bottom: 1.7em;
+            border: #E8E8E8 solid;
+            background: #E8E8E8;
+            padding: .4em;
+            width: 100%;
+            border-radius: .4em;
+        }
+        textarea{
+            border: #E8E8E8 solid;
+            background: #E8E8E8;
+            width: 100%;
+        }
+    }
+
+    .btn-container{
+        grid-area: form;
+        padding-top: 2em;
+        margin-bottom: 5em;
+    }
+
+    .btnSend{
+        text-align: center;
+        padding: .7em 1em;
+        background: #5222D0;
+        color: #E8E8E8;
+        font-weight: bold;
+    }
+
+    .social-contact{
+       padding-top: 10em;
+       margin-left: 5em;
+        .messenger{
+            padding-bottom: 1em;
+        }
+        .gmail{
+            padding-bottom: 1em;
+        }
+        .phone{
+            padding-bottom: 7em;
+             }
+          }
+        }
+      }
+
 
         // laptop view
         @media screen and (min-width: 920px){
@@ -589,11 +857,172 @@ nav .selection{
                         margin-top: 1em;
                         margin-left: 9em;
                         }
-            }      
+                    }   
+                    
+                //about me section
+                .about{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: "img about";
+                    padding: 1em 1em;
+                    color: #FFFFFF;
+                    background: #212529;
                 }
+                .profile img{
+                    width: 50%;
+                    border: #FFFFFF 3px solid;
+                    height:  65%;
+                    border-radius:unset;
+                    justify-content: center;
+                    display: flex;
+                    grid-area: img;
+                }
+                .about-head{
+                    padding-top: 4em;
+                    display: flex;
+
+                h1{
+                    color: #FFFFFF;
+                    display: flex;
+                    font-size: 24px;
+                    font-weight: bold;
+                    grid-area: about;
+                }
+                .iconify{
+                    margin-left: 1em;
+                    justify-content: space-between;
+                    font-size: 1.4em;
+                }
+                }
+
+                //about description
+                .about-description{
+                    font-size: 14px;
+                    line-height: 1.8em;
+                    grid-area: about;
+                    .hello{
+                        padding-top: 1.7em;
+                    }
+
+                    .my{
+                        padding-top: 1.7em;
+                    }
+                }
+
+                //about social
+                .about-social{
+                    padding-top: 2em;
+
+                    .iconify{
+                        margin: 10px;
+                        justify-content: space-between;
+                        font-size: 1.7em;
+                    }
+                }
+
+        //contact section
+        .contact-container{
+            margin-top: 4em;
+            padding: 0 2em;
+            color: #212529;
+            display: grid;
+            grid-template-areas: "form social";
+
+            .contact-title{
+
+                grid-area: form;
+            }
+            .contact-title h1{
+                padding: 0 1em;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            p{
+                padding: 0 1.9em;
+                margin-top: 1em;
+                font-size: 14px;
+                grid-area: form;
+            }
+
+            form{
+                padding: 0 1em;
+                margin-top: 5em;
+                grid-area: form;
+                padding-top: 4em;
+                display: flex;
+                flex-direction: column;
+                
+                label{
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+                input{
+                    margin-bottom: 1.7em;
+                    border: #E8E8E8 solid;
+                    background: #E8E8E8;
+                    padding: .4em;
+                    width: 100%;
+                    border-radius: .4em;
+                }
+                textarea{
+                    border: #E8E8E8 solid;
+                    background: #E8E8E8;
+                    width: 100%;
+                }
+            }
+
+            .btn-container{
+                grid-area: form;
+                padding-top: 2em;
+                margin-bottom: 5em;
+            }
+
+            .btnSend{
+                text-align: center;
+                padding: .7em 1em;
+                background: #5222D0;
+                color: #E8E8E8;
+                font-weight: bold;
+            }
+
+            .social-contact{
+            padding-top: 10em;
+            margin-left: 5em;
+                .messenger{
+                    padding-bottom: 1em;
+                }
+                .gmail{
+                    padding-bottom: 1em;
+                }
+                .phone{
+                    padding-bottom: 7em;
+                    }
+                }
+             }       
+     }
+
+     //extend laptop view
+
+     @media screen and (min-width: 1087px){
+
+         .navigation-container{
+
+             .logo{
+                 font-size: 24px;
+                }
+         }
+
+         nav .selection a{
+             font-size: 18px;
+         }
+
+
+
+     }
 
 
 
 
             
-}
+
