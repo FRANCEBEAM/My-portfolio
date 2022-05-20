@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -18,7 +21,7 @@ $colors:(
     proj-title: #5222D0
 );
 
-$font: "Lato",sans-serif;
+$font: 'Poppins', sans-serif;
 
 @function color($color-name){
     @return map-get($colors, $color-name)
@@ -34,7 +37,7 @@ body{
 .logo{
     margin: 1em;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 16px;
     display: block;
     
     .santander{
@@ -110,48 +113,50 @@ nav .selection{
       .sub-content{
          letter-spacing: 1px;
           text-align: center;
-          font-size: 12px;
+          font-size: 11px;
           font-weight: bold;
           color: #696969;
       }
 
       h1{
-          margin: 0 1em;
-          font-size: 28px;
-          font-weight: bold;
+          letter-spacing: 1px;
+          padding: .2em .7em;
+          font-size: 32px;
           text-align: center;
           color: color(bg-font);    
       }
 
      .sub-text{
-          margin: 2em 2em;
+          margin: .5em 2em;
           font-size: 12;
           text-align: center;   
           color: color(bg-font);    
       }
 
-      .view-work{
+      .btn-work{
+        display: flex;
+        padding: 0 6em;
+        .view-work{
         font-weight: bold;
         font-size: 14px;
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3em auto;
         text-decoration: none;
-        width: 7em;
-        text-align: center;
-        background: color(bg-button);
-        color: color(btn-font);
+        border: #5222D0 2px solid;
+        color: #5222D0;
         border-radius: .5em;
         padding: .8em;
-        justify-content: space-between;
+      }
+      margin-bottom: 7em;
       }
   }
 
   .devImage img{
-      padding: 2em 1em;
-
-      display: flex;
-      width: 100%;
+    //   padding: 2em 1em;
+    display: none;
+    //   display: flex;
+    //   width: 100%;
   }
 
     .project-container{
@@ -169,13 +174,16 @@ nav .selection{
         }
 
         .check-mywork{
+            padding-top:.5em;
             color: color(bg-whfont);
             font-size: 14px;
+            font-weight: 400;
             padding-bottom: 4em;
         }
 
         // Web application build
         .web-container{
+            margin: 0 1em;
             border: #121212 solid .3em;
             background: color(bg-body);
             margin-bottom: 2em;
@@ -195,7 +203,7 @@ nav .selection{
             margin-top: 1em;
             text-align: center;
             color: #5222D0;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: bold;
         }
 
@@ -213,6 +221,7 @@ nav .selection{
 
         // Front-end website 
         .front-container{
+            margin: 0 1em;
             border: #121212 solid .3em;
             background: color(bg-body);
             margin-bottom: 2em;
@@ -230,7 +239,7 @@ nav .selection{
             margin-top: 1em;
             text-align: center;
             color: #5222D0;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: bold;
         }
 
@@ -245,6 +254,7 @@ nav .selection{
 
         // UI UX website 
         .uiux-container{
+            margin: 0 1em;
             border: #121212 solid .3em;
             background: color(bg-body);
             margin-bottom: 2em;
@@ -262,7 +272,7 @@ nav .selection{
             margin-top: 1em;
             text-align: center;
             color: #5222D0;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: bold;
         }
 
@@ -282,7 +292,7 @@ nav .selection{
 
     //latest work
     .latest-container{
-        padding: 2em 1em;
+        padding: 4em 1em;
         color: #212529;
 
         a{
@@ -302,7 +312,8 @@ nav .selection{
         }
 
         .thumbnail{
-            padding-top: 2em;
+            margin: 0 1em;
+            padding-top: 6em;
             text-align: center;
             .sub-title{
                 color: #EC615B;
@@ -321,10 +332,10 @@ nav .selection{
                 color: #212529;
                 margin-bottom: 2em;
             }
+            padding-bottom: 1em;
         }
 
         .thumnail-img img{
-            border-radius: 2em;
             width: 100%;
             margin-bottom: 2em;
         }
@@ -363,6 +374,10 @@ nav .selection{
             justify-content: space-between;
             font-size: 1.4em;
         }
+        }
+
+        span .line{
+            width: 50%;
         }
 
         //about description
@@ -1004,17 +1019,44 @@ nav .selection{
 
      //extend laptop view
 
-     @media screen and (min-width: 1087px){
+     @media screen and (min-width: 1200px){
 
+        //navigation container
          .navigation-container{
-
+          padding: 1em 6em;
              .logo{
-                 font-size: 24px;
+                 font-size: 20px;
                 }
          }
 
          nav .selection a{
-             font-size: 18px;
+             font-size: 20px;
+            
+         }
+
+         //hero container
+         .hero-container{
+             padding: 1em 6em;
+
+             .sub-content{
+                font-size: 18px;
+             }
+             .lets{
+                font-size: 46px;
+             }
+             .sub-text{
+                 margin-top: 5em;
+                font-size: 18px;
+             }
+
+             .btn-work{
+                margin-top: 5em;
+                font-size: 18px;
+             }
+
+             .devImage img{
+                width: 100%;
+             }
          }
 
 

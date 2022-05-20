@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,14 +7,14 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #F8F9FA;
 }
 
 .logo {
   margin: 1em;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
   display: block;
 }
 
@@ -104,54 +105,53 @@ nav .openMenu {
 .hero-container .sub-content {
   letter-spacing: 1px;
   text-align: center;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
   color: #696969;
 }
 
 .hero-container h1 {
-  margin: 0 1em;
-  font-size: 28px;
-  font-weight: bold;
+  letter-spacing: 1px;
+  padding: .2em .7em;
+  font-size: 32px;
   text-align: center;
   color: #212529;
 }
 
 .hero-container .sub-text {
-  margin: 2em 2em;
+  margin: .5em 2em;
   font-size: 12;
   text-align: center;
   color: #212529;
 }
 
-.hero-container .view-work {
-  font-weight: bold;
-  font-size: 14px;
+.hero-container .btn-work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-  text-decoration: none;
-  width: 7em;
-  text-align: center;
-  background: #5222D0;
-  color: #F8F9FA;
-  border-radius: .5em;
-  padding: .8em;
+  padding: 0 6em;
+  margin-bottom: 7em;
+}
+
+.hero-container .btn-work .view-work {
+  font-weight: bold;
+  font-size: 14px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3em auto;
+  text-decoration: none;
+  border: #5222D0 2px solid;
+  color: #5222D0;
+  border-radius: .5em;
+  padding: .8em;
 }
 
 .devImage img {
-  padding: 2em 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
+  display: none;
 }
 
 .project-container {
@@ -171,12 +171,15 @@ nav .openMenu {
 }
 
 .project-container .check-mywork {
+  padding-top: .5em;
   color: #FFFFFF;
   font-size: 14px;
+  font-weight: 400;
   padding-bottom: 4em;
 }
 
 .project-container .web-container {
+  margin: 0 1em;
   border: #121212 solid .3em;
   background: #F8F9FA;
   margin-bottom: 2em;
@@ -199,7 +202,7 @@ nav .openMenu {
   margin-top: 1em;
   text-align: center;
   color: #5222D0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -217,6 +220,7 @@ nav .openMenu {
 }
 
 .project-container .front-container {
+  margin: 0 1em;
   border: #121212 solid .3em;
   background: #F8F9FA;
   margin-bottom: 2em;
@@ -239,7 +243,7 @@ nav .openMenu {
   margin-top: 1em;
   text-align: center;
   color: #5222D0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -253,6 +257,7 @@ nav .openMenu {
 }
 
 .project-container .uiux-container {
+  margin: 0 1em;
   border: #121212 solid .3em;
   background: #F8F9FA;
   margin-bottom: 2em;
@@ -275,7 +280,7 @@ nav .openMenu {
   margin-top: 1em;
   text-align: center;
   color: #5222D0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -290,7 +295,7 @@ nav .openMenu {
 }
 
 .latest-container {
-  padding: 2em 1em;
+  padding: 4em 1em;
   color: #212529;
 }
 
@@ -311,8 +316,10 @@ nav .openMenu {
 }
 
 .latest-container .thumbnail {
-  padding-top: 2em;
+  margin: 0 1em;
+  padding-top: 6em;
   text-align: center;
+  padding-bottom: 1em;
 }
 
 .latest-container .thumbnail .sub-title {
@@ -335,7 +342,6 @@ nav .openMenu {
 }
 
 .latest-container .thumnail-img img {
-  border-radius: 2em;
   width: 100%;
   margin-bottom: 2em;
 }
@@ -381,6 +387,10 @@ nav .openMenu {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.4em;
+}
+
+span .line {
+  width: 50%;
 }
 
 .about-description {
@@ -1044,12 +1054,35 @@ nav .openMenu {
   }
 }
 
-@media screen and (min-width: 1087px) {
+@media screen and (min-width: 1200px) {
+  .navigation-container {
+    padding: 1em 6em;
+  }
   .navigation-container .logo {
-    font-size: 24px;
+    font-size: 20px;
   }
   nav .selection a {
+    font-size: 20px;
+  }
+  .hero-container {
+    padding: 1em 6em;
+  }
+  .hero-container .sub-content {
     font-size: 18px;
+  }
+  .hero-container .lets {
+    font-size: 46px;
+  }
+  .hero-container .sub-text {
+    margin-top: 5em;
+    font-size: 18px;
+  }
+  .hero-container .btn-work {
+    margin-top: 5em;
+    font-size: 18px;
+  }
+  .hero-container .devImage img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */
