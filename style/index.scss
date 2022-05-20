@@ -33,11 +33,16 @@ body{
 }
 
 
+//navigation section
+.navigation-container{
+    padding: 0 1em;
+}
+
 //logo content
 .logo{
-    margin: 1em;
+    margin: 1em 1em;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
     display: block;
     
     .santander{
@@ -89,7 +94,7 @@ nav .selection{
 }
 
     .openMenu{
-        margin: 1em;
+        margin: 1em 1em;
         font-size: 2rem;
         cursor: pointer; 
     }
@@ -108,38 +113,41 @@ nav .selection{
 
   //hero container
   .hero-container{
-      margin-top: 4em;
-
+    padding: 4em 1em;
       .sub-content{
          letter-spacing: 1px;
           text-align: center;
-          font-size: 11px;
+          font-size: 12px;
           font-weight: bold;
           color: #696969;
       }
 
       h1{
           letter-spacing: 1px;
-          padding: .2em .7em;
+          padding-top: .2em;
           font-size: 32px;
           text-align: center;
           color: color(bg-font);    
       }
 
      .sub-text{
-          margin: .5em 2em;
-          font-size: 12;
+          padding: .5em 2em;
+          font-size: 13px;
           text-align: center;   
           color: color(bg-font);    
       }
 
       .btn-work{
         display: flex;
-        padding: 0 6em;
+        padding: 0 4em;
+        align-items: center;
+        justify-content: center;
         .view-work{
+        text-align: center;
+        justify-content: center;
         font-weight: bold;
         font-size: 14px;
-        justify-content: space-between;
+        display: flex;
         align-items: center;
         margin: 3em auto;
         text-decoration: none;
@@ -148,22 +156,23 @@ nav .selection{
         border-radius: .5em;
         padding: .8em;
       }
-      margin-bottom: 7em;
+      margin-bottom: 4em;
+
+      .arrow{
+       padding: 0 .3em;
+        justify-content: space-between;
+    }
       }
   }
 
   .devImage img{
-    //   padding: 2em 1em;
     display: none;
-    //   display: flex;
-    //   width: 100%;
   }
 
     .project-container{
-        margin-top: 1em;
         background: color(bg-projects);
         width: 100%;
-        padding: 0 1em;
+        padding: 1em 2em;
 
         .my-projects{
             padding-top: 2em;
@@ -181,12 +190,16 @@ nav .selection{
             padding-bottom: 4em;
         }
 
+        .project-box{
+            padding-top: 2em;
+        }
+
         // Web application build
         .web-container{
-            margin: 0 1em;
+            margin: 0;
             border: #121212 solid .3em;
             background: color(bg-body);
-            margin-bottom: 2em;
+            margin-bottom: 3em;
         }
 
         .web-icon{
@@ -221,10 +234,10 @@ nav .selection{
 
         // Front-end website 
         .front-container{
-            margin: 0 1em;
+            margin: 0;
             border: #121212 solid .3em;
             background: color(bg-body);
-            margin-bottom: 2em;
+            margin-bottom: 3em;
         }
 
         .front-icon{
@@ -254,7 +267,7 @@ nav .selection{
 
         // UI UX website 
         .uiux-container{
-            margin: 0 1em;
+            margin: 0;
             border: #121212 solid .3em;
             background: color(bg-body);
             margin-bottom: 2em;
@@ -283,7 +296,7 @@ nav .selection{
             padding-top: 2em;
             text-align: center;
             font-size: 14px;
-            margin-bottom: 2em;
+            margin-bottom: 3em;
         }
 
         padding-bottom: 4em;
@@ -292,7 +305,7 @@ nav .selection{
 
     //latest work
     .latest-container{
-        padding: 4em 1em;
+        padding: 4em 2em;
         color: #212529;
 
         a{
@@ -311,8 +324,11 @@ nav .selection{
             color: #212529;
         }
 
+        .thumbnail-container{
+            margin-bottom: 4em;
+        }
+
         .thumbnail{
-            margin: 0 1em;
             padding-top: 6em;
             text-align: center;
             .sub-title{
@@ -325,14 +341,6 @@ nav .selection{
                 font-size: 20px;
                 color: #212529;
             }
-
-            .thumnail-description p{
-                margin: 1em 1em;
-                font-size: 14px;
-                color: #212529;
-                margin-bottom: 2em;
-            }
-            padding-bottom: 1em;
         }
 
         .thumnail-img img{
@@ -355,9 +363,20 @@ nav .selection{
         }
 
         .about{
-            padding: 1em 1em;
-            color: #FFFFFF;
+            padding: 1em 2em;
+            color: #eeeeee;
             background: #212529;
+
+            .line{
+                margin-left: .5em;
+                margin-top: .9em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #f2f2f24e;
+                height: 1px;
+                width: 180px;
+            }
         }
 
         .about-head{
@@ -391,84 +410,95 @@ nav .selection{
             .my{
                 padding-top: 1.7em;
             }
+
+            .Francis{
+                font-weight: bold;
+                color: #f2f2f2;
+            }
         }
 
         //about social
         .about-social{
-            padding-top: 2em;
+            display: flex;
+            padding-top: 3em;
+            padding-bottom: 3em;
+           justify-content: center;
 
             .iconify{
-                margin: 10px;
+                display: flex;
                 justify-content: space-between;
-                font-size: 1.7em;
+                margin: 0 10px;
+                cursor: pointer;
+                font-size: 2.5em;
             }
         }
 
         //contact section
-  .contact-container{
-    margin-top: 2em;
-    padding: 0 1em;
-    color: #212529;
+        .contact-container{
+            padding: 1em 2em;
+            color: #212529;
 
-    .contact-title h1{
-        padding-top: 2em;
-        font-size: 20px;
-        font-weight: bold;
-    }
+            .contact-title h1{
+                padding-top: 2em;
+                font-size: 20px;
+                font-weight: bold;
+            }
 
-    p{
-        font-size: 14px;
-    }
+            p{
+                padding-top: .4em;
+                font-size: 14px;
+            }
 
-    form{
-        padding-top: 4em;
-        
-        label{
-            font-size: 17px;
-            font-weight: bold;
+            form{
+                padding-top: 4em;
+                
+                label{
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+                input{
+                    margin-bottom: 1.7em;
+                    border: #E8E8E8 solid;
+                    background: #E8E8E8;
+                    padding: .4em;
+                    width: 100%;
+                    border-radius: .4em;
+                }
+                textarea{
+                    border: #E8E8E8 solid;
+                    background: #E8E8E8;
+                    width: 100%;
+                }
+            }
+
+            .btn-container{
+                padding-top: 2em;
+
+            }
+
+            .btnSend{
+                text-align: center;
+                padding: .7em 1.5em;
+                background: #5222D0;
+                color: #E8E8E8;
+                font-weight: bold;
+            }
+
+            .social-contact{
+            padding-top: 4em;
+            font-size: 14px;
+                .messenger{
+                    padding-bottom: 1em;
+                }
+                .gmail{
+                    padding-bottom: 1em;
+                }
+                .phone{
+                    padding-bottom: 7em;
+                }
+            }
+            
         }
-        input{
-            margin-bottom: 1.7em;
-            border: #E8E8E8 solid;
-            background: #E8E8E8;
-            padding: .4em;
-            width: 100%;
-            border-radius: .4em;
-        }
-        textarea{
-            border: #E8E8E8 solid;
-            background: #E8E8E8;
-            width: 100%;
-        }
-    }
-
-    .btn-container{
-        padding-top: 2em;
-
-    }
-
-    .btnSend{
-        text-align: center;
-        padding: .7em 1em;
-        background: #5222D0;
-        color: #E8E8E8;
-        font-weight: bold;
-    }
-
-    .social-contact{
-       padding-top: 3em;
-        .messenger{
-            padding-bottom: 1em;
-        }
-        .gmail{
-            padding-bottom: 1em;
-        }
-        .phone{
-            padding-bottom: 7em;
-        }
-    }
-    
-  }
 
     //for tablet view
 

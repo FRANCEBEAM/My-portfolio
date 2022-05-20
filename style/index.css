@@ -11,10 +11,14 @@ body {
   background: #F8F9FA;
 }
 
+.navigation-container {
+  padding: 0 1em;
+}
+
 .logo {
-  margin: 1em;
+  margin: 1em 1em;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
   display: block;
 }
 
@@ -79,7 +83,7 @@ nav .selection .social {
 }
 
 .openMenu {
-  margin: 1em;
+  margin: 1em 1em;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -99,28 +103,28 @@ nav .openMenu {
 }
 
 .hero-container {
-  margin-top: 4em;
+  padding: 4em 1em;
 }
 
 .hero-container .sub-content {
   letter-spacing: 1px;
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
   color: #696969;
 }
 
 .hero-container h1 {
   letter-spacing: 1px;
-  padding: .2em .7em;
+  padding-top: .2em;
   font-size: 32px;
   text-align: center;
   color: #212529;
 }
 
 .hero-container .sub-text {
-  margin: .5em 2em;
-  font-size: 12;
+  padding: .5em 2em;
+  font-size: 13px;
   text-align: center;
   color: #212529;
 }
@@ -129,16 +133,26 @@ nav .openMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 6em;
-  margin-bottom: 7em;
+  padding: 0 4em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4em;
 }
 
 .hero-container .btn-work .view-work {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: bold;
   font-size: 14px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -150,15 +164,21 @@ nav .openMenu {
   padding: .8em;
 }
 
+.hero-container .btn-work .arrow {
+  padding: 0 .3em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .devImage img {
   display: none;
 }
 
 .project-container {
-  margin-top: 1em;
   background: #EC615B;
   width: 100%;
-  padding: 0 1em;
+  padding: 1em 2em;
   padding-bottom: 4em;
 }
 
@@ -178,11 +198,15 @@ nav .openMenu {
   padding-bottom: 4em;
 }
 
+.project-container .project-box {
+  padding-top: 2em;
+}
+
 .project-container .web-container {
-  margin: 0 1em;
+  margin: 0;
   border: #121212 solid .3em;
   background: #F8F9FA;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .project-container .web-icon {
@@ -220,10 +244,10 @@ nav .openMenu {
 }
 
 .project-container .front-container {
-  margin: 0 1em;
+  margin: 0;
   border: #121212 solid .3em;
   background: #F8F9FA;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .project-container .front-icon {
@@ -257,7 +281,7 @@ nav .openMenu {
 }
 
 .project-container .uiux-container {
-  margin: 0 1em;
+  margin: 0;
   border: #121212 solid .3em;
   background: #F8F9FA;
   margin-bottom: 2em;
@@ -291,11 +315,11 @@ nav .openMenu {
   padding-top: 2em;
   text-align: center;
   font-size: 14px;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .latest-container {
-  padding: 4em 1em;
+  padding: 4em 2em;
   color: #212529;
 }
 
@@ -315,11 +339,13 @@ nav .openMenu {
   color: #212529;
 }
 
+.latest-container .thumbnail-container {
+  margin-bottom: 4em;
+}
+
 .latest-container .thumbnail {
-  margin: 0 1em;
   padding-top: 6em;
   text-align: center;
-  padding-bottom: 1em;
 }
 
 .latest-container .thumbnail .sub-title {
@@ -332,13 +358,6 @@ nav .openMenu {
   font-weight: bold;
   font-size: 20px;
   color: #212529;
-}
-
-.latest-container .thumbnail .thumnail-description p {
-  margin: 1em 1em;
-  font-size: 14px;
-  color: #212529;
-  margin-bottom: 2em;
 }
 
 .latest-container .thumnail-img img {
@@ -361,9 +380,26 @@ nav .openMenu {
 }
 
 .about {
-  padding: 1em 1em;
-  color: #FFFFFF;
+  padding: 1em 2em;
+  color: #eeeeee;
   background: #212529;
+}
+
+.about .line {
+  margin-left: .5em;
+  margin-top: .9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f2f2f24e;
+  height: 1px;
+  width: 180px;
 }
 
 .about-head {
@@ -406,21 +442,36 @@ span .line {
   padding-top: 1.7em;
 }
 
+.about-description .Francis {
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
 .about-social {
-  padding-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about-social .iconify {
-  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 1.7em;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 2.5em;
 }
 
 .contact-container {
-  margin-top: 2em;
-  padding: 0 1em;
+  padding: 1em 2em;
   color: #212529;
 }
 
@@ -431,6 +482,7 @@ span .line {
 }
 
 .contact-container p {
+  padding-top: .4em;
   font-size: 14px;
 }
 
@@ -464,14 +516,15 @@ span .line {
 
 .contact-container .btnSend {
   text-align: center;
-  padding: .7em 1em;
+  padding: .7em 1.5em;
   background: #5222D0;
   color: #E8E8E8;
   font-weight: bold;
 }
 
 .contact-container .social-contact {
-  padding-top: 3em;
+  padding-top: 4em;
+  font-size: 14px;
 }
 
 .contact-container .social-contact .messenger {
