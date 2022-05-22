@@ -375,7 +375,7 @@ nav .selection{
                 justify-content: center;
                 background: #f2f2f24e;
                 height: 1px;
-                width: 180px;
+                width: 60%;
             }
         }
 
@@ -484,6 +484,11 @@ nav .selection{
                 font-weight: bold;
             }
 
+
+            button.btnSend{
+                border-radius: .4em;
+            }
+
             .social-contact{
             padding-top: 4em;
             font-size: 14px;
@@ -496,13 +501,95 @@ nav .selection{
                 .phone{
                     padding-bottom: 7em;
                 }
-            }
-            
+            }  
         }
 
-    //for tablet view
 
+    // 654 view port
+    @media screen and (min-width: 654px){
+
+
+        //Navigation Section
+        div.navigation-container{
+
+            nav{
+                padding: 0 1em;
+            }
+        }
+
+
+        //Hero Section
+        .hero-container{
+            padding: 5em 1em;
+            
+            p.sub-content{
+                font-size: 14px;
+            }
+            h1.lets{
+                font-size: 35px;
+            }
+            p.sub-text{
+                margin: 0 2em;
+                font-size: 14px;
+            }
+        }
+
+
+        //Project Section
+        div.project-container{
+                padding: 0 3em;
+
+            div.project-box{
+                padding: 0 5em;
+                padding-bottom: 4em;
+            }
+        }
+
+    
+        //Latest Section
+        div.latest-container{
+            padding: 4em 3em;
+        }
+
+        //About Me Section
+        div.about{
+            padding: 2em 3em;
+
+            div.about-head{
+
+                span.line{
+                    width: 80%;
+                }
+            }
+        }
+
+        div.contact-container{
+            padding: 3em 3em;
+        }
+
+        div.social-contact{
+           font-size: 30px;
+           i{
+            font-size: 20px;
+           } 
+        }
+    }
+
+
+
+
+
+    //for tablet view
     @media screen and (min-width: 768px){
+
+        div.navigation-container{
+            padding: 0 1em;
+            div.logo{
+                font-size: 20px;
+            }
+        }
+
+         //hero container content
         .hero-container{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -510,107 +597,109 @@ nav .selection{
             "hero-container devImage";
             
         }
-
-        //hero container content
-            .hero-container{
-               
-                .sub-content{
-                    margin: 0;
-                    display: inline-flex;
-                    padding: 0 1.9em;
-                    grid-area: hero-container;
-                    letter-spacing: 1px;
-                    font-size: 14px;
-                    text-align: left;
-                }
-              
-                .lets{
-                    display: inline-flex;
-                    margin: 0;
-                    padding: 0 .7em;
-                    padding-top: .7em;
-                    grid-area: hero-container;
-                    font-size: 36px;
-                    font-weight: bold;
-                    text-align: left;
-                }
-    
-                .sub-text{
-                    margin: 0;
-                    padding: 0 2em;
-                    padding-top: 9em;
-                    grid-area: hero-container;
-                    font-size: 14px;
-                    text-align: left;
-                    font-weight: 500;
-                    line-height: 1.5em;
-                }
-
-                .btn-work{
-                    display: block;
-                    padding-top: 14em;
-                    padding-left: 2em;
-                   justify-self: left;
-                   grid-area: hero-container;
-                }
-
-                .devImage{
-                    grid-area: devImage;
-                    width: 100%;
-                }
+        div.hero-container{
+           padding: 4em 2em;
+            p.sub-content{
+                display: inline-flex;
+                padding: 0 1.5em;
+                grid-area: hero-container;
+                letter-spacing: 1px;
+                font-size: 12px;
+                text-align: left;
+            }
+            
+            h1.lets{
+                display: inline-flex;
+                padding: 1em .6em;
+                grid-area: hero-container;
+                font-size: 33px;
+                font-weight: bold;
+                text-align: left;
             }
 
-        //my projects content
+            p.sub-text{
+                display: inline-flex;
+                margin: 0;
+                padding: 12em 2em;
+                grid-area: hero-container;
+                font-size: 12px;
+                text-align: left;
+                font-weight: 500;
+            }
+
+            .btn-work{
+                display: block;
+                padding-top: 13em;
+                padding-left: 1.5em;
+                justify-self: left;
+                grid-area: hero-container;
+            }
+
+            div.devImage img{
+                grid-area: devImage;
+                width: 100%;
+                display: inline-block;
+            }
+        }
+
+
+        //my projects section
+        div.project-container{
+            padding: 2em 1em;
+        }
+
+
             .my-projects{
-                padding: 0 1em;
+                font-size: 20px;
+                padding: 0 2em;
                 justify-content: left;
             }
 
             .check-mywork{
-                padding: 0 1.6em;
+                font-size: 12px;
+                padding: 0 3em;
                 justify-content: left;
             }
 
 
             .project-box{
                 box-sizing: border-box;
-                display: flex;
+                margin: 0;
+                padding:0 1em;
+                display:flex;
+                height: 200px;
                 justify-content: center;
-            }
-                
-            .web-container{
-                margin: 0 1em;
-                width: 220px;
                 h2{
                     font-size: 16px;
                     font-weight: bold;
+                }
+            }
+                
+            .web-container{
+                box-sizing: border-box;
+                padding: 0 auto;
+                width: 230px;
+                div.web-description{
+                    font-size: 12px;
                 }
             }
 
             .front-container{
-                margin: 0 1em;
-                width: 220px;
-                h2{
-                    font-size: 16px;
-                    font-weight: bold;
+                box-sizing: border-box;
+                padding: 0 auto;
+                width: 230px;
+                div.front-description{
+                    font-size: 12px;
                 }
             }
 
-            .uiux-container{
-                margin: 0 1em;
-                width: 220px;
-                h2{
-                    font-size: 16px;
-                    font-weight: bold;
-                }
-            }
+
 
 
         //Latest work content
 
         .latest-works{
-                padding: 0 1em;
-
+                padding-top: 10em;
         }
 
         .new-project{
