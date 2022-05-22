@@ -200,34 +200,35 @@ nav .selection{
             border: #121212 solid .3em;
             background: color(bg-body);
             margin-bottom: 3em;
+
+            .web-icon{
+                color: #121212;
+                font-size: 4em;
+                padding-top: .4em;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+            }
+    
+    
+            .web-title{
+                margin-top: 1em;
+                text-align: center;
+                color: #5222D0;
+                font-size: 14px;
+                font-weight: bold;
+            }
+    
+            .web-description{
+                color: #212529;
+                margin: 0 2em;
+                margin-bottom: 2em;
+                padding-top: 2em;
+                text-align: center;
+                font-size: 14px;
+            }
         }
 
-        .web-icon{
-            color: #121212;
-            font-size: 4em;
-            padding-top: .4em;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-        }
-
-
-        .web-title{
-            margin-top: 1em;
-            text-align: center;
-            color: #5222D0;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        .web-description{
-            color: #212529;
-            margin: 0 2em;
-            margin-bottom: 2em;
-            padding-top: 2em;
-            text-align: center;
-            font-size: 14px;
-        }
         a{
             text-decoration: none;
         }
@@ -238,31 +239,31 @@ nav .selection{
             border: #121212 solid .3em;
             background: color(bg-body);
             margin-bottom: 3em;
-        }
 
-        .front-icon{
-            color: #121212;
-            font-size: 4em;
-            padding-top: .4em;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-        }
-        .front-title{
-            margin-top: 1em;
-            text-align: center;
-            color: #5222D0;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        .front-description{
-            color: #212529;
-            margin: 0 2em;
-            margin-bottom: 2em;
-            padding-top: 2em;
-            text-align: center;
-            font-size: 14px;
+            .front-icon{
+                color: #121212;
+                font-size: 4em;
+                padding-top: .4em;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+            }
+            .front-title{
+                margin-top: 1em;
+                text-align: center;
+                color: #5222D0;
+                font-size: 14px;
+                font-weight: bold;
+            }
+    
+            .front-description{
+                color: #212529;
+                margin: 0 2em;
+                margin-bottom: 2em;
+                padding-top: 2em;
+                text-align: center;
+                font-size: 14px;
+            }
         }
 
         // UI UX website 
@@ -270,36 +271,33 @@ nav .selection{
             margin: 0;
             border: #121212 solid .3em;
             background: color(bg-body);
-            margin-bottom: 2em;
-        }
-
-        .uiux-icon{
-            color: #121212;
-            font-size: 4em;
-            padding-top: .4em;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-        }
-        .uiux-title{
-            margin-top: 1em;
-            text-align: center;
-            color: #5222D0;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        .uiux-description{
-            color: #212529;
-            margin: 0 2em;
-            margin-bottom: 2em;
-            padding-top: 2em;
-            text-align: center;
-            font-size: 14px;
             margin-bottom: 3em;
-        }
 
-        padding-bottom: 4em;
+            .uiux-icon{
+                color: #121212;
+                font-size: 4em;
+                padding-top: .4em;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+            }
+            .uiux-title{
+                margin-top: 1em;
+                text-align: center;
+                color: #5222D0;
+                font-size: 14px;
+                font-weight: bold;
+            }
+    
+            .uiux-description{
+                color: #212529;
+                margin: 0 2em;
+                margin-bottom: 2em;
+                padding-top: 2em;
+                text-align: center;
+                font-size: 14px;
+            }
+        }
     }
 
 
@@ -366,17 +364,6 @@ nav .selection{
             padding: 1em 2em;
             color: #eeeeee;
             background: #212529;
-
-            .line{
-                margin-left: .5em;
-                margin-top: .9em;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: #f2f2f24e;
-                height: 1px;
-                width: 60%;
-            }
         }
 
         .about-head{
@@ -395,8 +382,16 @@ nav .selection{
         }
         }
 
-        span .line{
-            width: 50%;
+        .line{
+            margin-left: .5em;
+            margin-top: .9em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f2f2f24e;
+            height: 1px;
+            width: 60%;
+            grid-area: about;
         }
 
         //about description
@@ -576,14 +571,11 @@ nav .selection{
     }
 
 
-
-
-
     //for tablet view
     @media screen and (min-width: 768px){
 
         div.navigation-container{
-            padding: 0 1em;
+          
             div.logo{
                 font-size: 20px;
             }
@@ -645,103 +637,119 @@ nav .selection{
 
         //my projects section
         div.project-container{
-            padding: 2em 1em;
+            padding: 2em 2em;
         }
 
-
             .my-projects{
-                font-size: 20px;
-                padding: 0 2em;
-                justify-content: left;
+                display: inline-flex;
+                font-size: 24px;
             }
 
             .check-mywork{
-                font-size: 12px;
-                padding: 0 3em;
-                justify-content: left;
+                display: inline-flex;
             }
-
 
             .project-box{
                 box-sizing: border-box;
-                margin: 0;
-                padding:0 1em;
                 display:flex;
-                height: 200px;
+                gap: 1em;
+                height: 150px;
                 justify-content: center;
                 h2{
-                    font-size: 16px;
+                    font-size: 17px;
                     font-weight: bold;
                 }
-            }
-                
-            .web-container{
-                box-sizing: border-box;
-                padding: 0 auto;
-                width: 230px;
-                div.web-description{
+                p{
                     font-size: 12px;
                 }
             }
+                
+            div.web-container{
+                box-sizing: border-box;
+                padding: 0 auto;
+                width: 230px;
+                
+                div.web-description{
+                    font-size: 12px;
+                }
+
+                div.web-icon .iconify {
+                    font-size: 60px;
+                }
+            }
+
 
             .front-container{
                 box-sizing: border-box;
                 padding: 0 auto;
                 width: 230px;
+
                 div.front-description{
                     font-size: 12px;
+                }
+
+                div.front-icon .iconify {
+                    font-size: 60px;
+                }
+            }
+
+            .uiux-container{
+                box-sizing: border-box;
+                padding: 0 auto;
+                width: 230px;
+
+                div.uiux-description{
+                    font-size: 12px;
+                }
+
+                div.uiux-icon .iconify {
+                    font-size: 60px;
                 }
             }
 
 
-
-
         //Latest work content
-
-        .latest-works{
-                padding-top: 10em;
+        div.latest-container{
+            padding: 7em 2em;
         }
 
-        .new-project{
-            padding: 0 1.8em;
-            justify-content: left;
-            text-align: left;
-            width: 60%;
-            padding-bottom: 2em;
+        .latest-works{
+            padding-top: 6em;
+        }
+
+        p.new-project{
+            padding-bottom: 1em;
         }
 
         .thumbnail-container{
             display: grid;
+            gap: 2em;
             grid-template-columns: 1fr 1fr;
         }
 
         .thumbnail{
-            margin: 0 1em;
-            width: 320px;
+            display: flex;
+            width: 100%;
             a{
                 text-decoration: none;
+
             }
         }
 
-        .sub-title h4{
-            padding: 0 1.5em;
-            display: flex;
-            font-size: 14px;
-            font-weight: bold;
-        }
-        .thumbnail-title h3{
-            padding: 0 1em;
+        div.thumnail .thumbnail-title{
+  
+            h3{
             display: flex;
             font-size: 20px;
             font-weight: bold;
-            text-align: left;
-        }
-
-        .thumnail-description{
-            padding: 0 .5em;
-            display: flex;
-            text-align: left;
-            font-size: 14px;
+            text-align: center;
+            }
+            h4{
+                text-align: center;
+                display: flex;
+                font-size: 14px;
+                font-weight: bold;
+            }
         }
 
         .thumnail-img img{
@@ -754,41 +762,38 @@ nav .selection{
         .about{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-areas: "img about";
-            padding: 1em 1em;
-            color: #FFFFFF;
+            grid-template-areas: "about img";
+            color: #f2f2f2;
             background: #212529;
+            
+            .line{
+             display: none;
+            }
         }
+
         .profile img{
-            width: 60%;
-            border: #FFFFFF 3px solid;
-            height:  60%;
+            margin-top: 7em;
+            border: #f2f2f2 3px solid;
             border-radius:unset;
-            justify-content: center;
             display: flex;
             grid-area: img;
         }
+
         .about-head{
-            padding-top: 4em;
+            padding-top: 2em;
             display: flex;
 
         h1{
-            color: #FFFFFF;
-            display: flex;
             font-size: 24px;
+            color: #f2f2f2;
+            display: flex;
             font-weight: bold;
             grid-area: about;
         }
-        .iconify{
-            margin-left: 1em;
-            justify-content: space-between;
-            font-size: 1.4em;
-        }
-        }
-
+        }       
+        
         //about description
         .about-description{
-            font-size: 14px;
             line-height: 1.8em;
             grid-area: about;
             .hello{
@@ -801,43 +806,42 @@ nav .selection{
         }
 
         //about social
-        .about-social{
+        div.about-social{
             padding-top: 2em;
-
+            justify-content: left;
             .iconify{
-                margin: 10px;
+                margin: 0 9px;
                 justify-content: space-between;
-                font-size: 1.7em;
+                font-size: 1.9em;
             }
         }
 
-    //contact section
-  .contact-container{
-    margin-top: 4em;
-    padding: 0 2em;
-    color: #212529;
-    display: grid;
-    grid-template-areas: "form social";
-
-    .contact-title{
-
-        grid-area: form;
-    }
-    .contact-title h1{
+        //contact section
+    .contact-container{
+        margin-top: 2em;
         padding: 0 1em;
-        font-size: 24px;
-        font-weight: bold;
-    }
+        color: #212529;
+        display: grid;
+        grid-template-areas: "form social";
 
-    p{
-        padding: 0 1.9em;
-        margin-top: 1em;
-        font-size: 14px;
-        grid-area: form;
-    }
+        .contact-title{
+            grid-area: form;
+        }
+        .contact-title h1{
+          
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        p{
+          
+            margin-top: 1em;
+            font-size: 14px;
+            grid-area: form;
+        }
 
     form{
-        padding: 0 1em;
+      
         margin-top: 5em;
         grid-area: form;
         padding-top: 4em;
@@ -863,35 +867,35 @@ nav .selection{
         }
     }
 
-    .btn-container{
-        grid-area: form;
-        padding-top: 2em;
-        margin-bottom: 5em;
-    }
+        .btn-container{
+            grid-area: form;
+            padding-top: 2em;
+            margin-bottom: 5em;
+        }
 
-    .btnSend{
-        text-align: center;
-        padding: .7em 1em;
-        background: #5222D0;
-        color: #E8E8E8;
-        font-weight: bold;
-    }
+        .btnSend{
+            text-align: center;
+            padding: .7em 1em;
+            background: #5222D0;
+            color: #E8E8E8;
+            font-weight: bold;
+        }
 
-    .social-contact{
-       padding-top: 10em;
-       margin-left: 5em;
-        .messenger{
-            padding-bottom: 1em;
+        .social-contact{
+        padding-top: 10em;
+        margin-left: 5em;
+            .messenger{
+                padding-bottom: 1em;
+            }
+            .gmail{
+                padding-bottom: 1em;
+            }
+            .phone{
+                padding-bottom: 7em;
+                }
+            }
+            }
         }
-        .gmail{
-            padding-bottom: 1em;
-        }
-        .phone{
-            padding-bottom: 7em;
-             }
-          }
-        }
-      }
 
 
         // laptop view
