@@ -179,6 +179,9 @@ nav .openMenu {
   background: #EC615B;
   width: 100%;
   padding: 1em 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .project-container .my-projects {
@@ -190,6 +193,9 @@ nav .openMenu {
 }
 
 .project-container .check-mywork {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   padding-top: .5em;
   color: #FFFFFF;
   font-size: 14px;
@@ -344,6 +350,9 @@ nav .openMenu {
 .latest-container .thumbnail {
   padding-top: 6em;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .latest-container .thumbnail .sub-title {
@@ -471,7 +480,6 @@ nav .openMenu {
 }
 
 .contact-container .contact-title h1 {
-  padding-top: 2em;
   font-size: 20px;
   font-weight: bold;
 }
@@ -651,7 +659,10 @@ nav .openMenu {
     display: inline-block;
   }
   div.project-container {
-    padding: 2em 2em;
+    padding: .1em 2em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .my-projects {
     display: -webkit-inline-box;
@@ -660,9 +671,9 @@ nav .openMenu {
     font-size: 24px;
   }
   .check-mywork {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
   .project-box {
     -webkit-box-sizing: border-box;
@@ -671,7 +682,7 @@ nav .openMenu {
     display: -ms-flexbox;
     display: flex;
     gap: 1em;
-    height: 150px;
+    height: 200px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -720,7 +731,7 @@ nav .openMenu {
     font-size: 60px;
   }
   div.latest-container {
-    padding: 7em 2em;
+    padding: 5em 2em;
   }
   .latest-works {
     padding-top: 6em;
@@ -740,6 +751,9 @@ nav .openMenu {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .thumbnail a {
     text-decoration: none;
@@ -830,7 +844,6 @@ nav .openMenu {
     font-size: 1.9em;
   }
   .contact-container {
-    margin-top: 2em;
     padding: 0 1em;
     color: #212529;
     display: -ms-grid;
@@ -854,252 +867,6 @@ nav .openMenu {
     grid-area: form;
   }
   .contact-container form {
-    margin-top: 5em;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: form;
-    padding-top: 4em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contact-container form label {
-    font-size: 17px;
-    font-weight: bold;
-  }
-  .contact-container form input {
-    margin-bottom: 1.7em;
-    border: #E8E8E8 solid;
-    background: #E8E8E8;
-    padding: .4em;
-    width: 100%;
-    border-radius: .4em;
-  }
-  .contact-container form textarea {
-    border: #E8E8E8 solid;
-    background: #E8E8E8;
-    width: 100%;
-  }
-  .contact-container .btn-container {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: form;
-    padding-top: 2em;
-    margin-bottom: 5em;
-  }
-  .contact-container .btnSend {
-    text-align: center;
-    padding: .7em 1em;
-    background: #5222D0;
-    color: #E8E8E8;
-    font-weight: bold;
-  }
-  .contact-container .social-contact {
-    padding-top: 10em;
-    margin-left: 5em;
-  }
-  .contact-container .social-contact .messenger {
-    padding-bottom: 1em;
-  }
-  .contact-container .social-contact .gmail {
-    padding-bottom: 1em;
-  }
-  .contact-container .social-contact .phone {
-    padding-bottom: 7em;
-  }
-}
-
-@media screen and (min-width: 920px) {
-  .navigation-container {
-    padding: 0 4.8em;
-  }
-  .openMenu i {
-    display: none;
-  }
-  .closeMenu i {
-    display: none;
-  }
-  nav .selection {
-    display: contents;
-  }
-  nav .selection a {
-    font-weight: 500;
-    font-size: 14px;
-    color: #212529;
-  }
-  .social i {
-    display: none;
-  }
-  .hero-container {
-    padding: 0 4em;
-  }
-  .project-container {
-    padding: 0 4.8em;
-    height: 360px;
-    position: relative;
-  }
-  .latest-container {
-    margin-top: 240px;
-    padding: 0 4.8em;
-    margin-bottom: 5em;
-  }
-  .thumbnail-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .thumbnail a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .thumbnail {
-    width: 100%;
-  }
-  .thumbnail .thumnail-img img {
-    width: 150%;
-    border-radius: 1em;
-  }
-  .thumbnail .sub-title h4 {
-    margin-top: 3em;
-    margin-left: 9em;
-  }
-  .thumbnail .thumbnail-title h3 {
-    margin-top: .2em;
-    margin-left: 6.4em;
-  }
-  .thumbnail .thumnail-img img {
-    cursor: default;
-    pointer-events: none;
-  }
-  .thumbnail a {
-    background: #f2f2f2;
-  }
-  .thumbnail .thumbnail {
-    background-size: cover;
-    width: 200%;
-  }
-  .thumbnail .thumnail-img {
-    margin-top: 1.5em;
-    margin-left: 1em;
-    width: 60%;
-  }
-  .thumbnail .thumnail-description {
-    margin-top: 1em;
-    margin-left: 9em;
-  }
-  .about {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "img about";
-    padding: 1em 1em;
-    color: #FFFFFF;
-    background: #212529;
-  }
-  .profile img {
-    width: 50%;
-    border: #FFFFFF 3px solid;
-    height: 65%;
-    border-radius: unset;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: img;
-  }
-  .about-head {
-    padding-top: 4em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .about-head h1 {
-    color: #FFFFFF;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 24px;
-    font-weight: bold;
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: about;
-  }
-  .about-head .iconify {
-    margin-left: 1em;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    font-size: 1.4em;
-  }
-  .about-description {
-    font-size: 14px;
-    line-height: 1.8em;
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: about;
-  }
-  .about-description .hello {
-    padding-top: 1.7em;
-  }
-  .about-description .my {
-    padding-top: 1.7em;
-  }
-  .about-social {
-    padding-top: 2em;
-  }
-  .about-social .iconify {
-    margin: 10px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    font-size: 1.7em;
-  }
-  .contact-container {
-    margin-top: 4em;
-    padding: 0 2em;
-    color: #212529;
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "form social";
-  }
-  .contact-container .contact-title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: form;
-  }
-  .contact-container .contact-title h1 {
-    padding: 0 1em;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .contact-container p {
-    padding: 0 1.9em;
-    margin-top: 1em;
-    font-size: 14px;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: form;
-  }
-  .contact-container form {
-    padding: 0 1em;
     margin-top: 5em;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -1161,33 +928,198 @@ nav .openMenu {
 
 @media screen and (min-width: 1200px) {
   .navigation-container {
-    padding: 1em 6em;
+    padding: 0 auto;
+    padding-top: 3em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .navigation-container .logo {
-    font-size: 20px;
+  .navigation-container div.logo a {
+    font-size: 24px;
   }
-  nav .selection a {
-    font-size: 20px;
+  .navigation-container div.openMenu {
+    display: none;
   }
-  .hero-container {
-    padding: 1em 6em;
+  .navigation-container nav .selection {
+    display: contents;
   }
-  .hero-container .sub-content {
+  .navigation-container nav .selection a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #212529;
+  }
+  .navigation-container nav .selection a {
     font-size: 18px;
   }
-  .hero-container .lets {
+  div.hero-container {
+    padding: 1em auto;
+  }
+  div.hero-container p.sub-content {
+    font-size: 18px;
+  }
+  div.hero-container h1.lets {
     font-size: 46px;
   }
-  .hero-container .sub-text {
-    margin-top: 5em;
+  div.hero-container p.sub-text {
     font-size: 18px;
   }
-  .hero-container .btn-work {
+  div.hero-container div.btn-work {
     margin-top: 5em;
-    font-size: 18px;
   }
-  .hero-container .devImage img {
+  div.hero-container div.btn-work a.view-work {
+    padding: 1.2em 1em;
+    font-size: 16px;
+  }
+  div.hero-container div.btn-work a.view-work i {
+    font-size: 20px;
+  }
+  div.hero-container .devImage img {
     width: 100%;
+  }
+  div.project-container {
+    padding: 0 4em;
+    height: 500px;
+  }
+  div.project-container h2.my-projects {
+    padding: 0 auto;
+    font-size: 32px;
+  }
+  div.project-container p.check-mywork {
+    padding: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 18px;
+  }
+  div.project-container div.project-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3em;
+  }
+  div.project-container div.project-box div.web-container {
+    width: 320px;
+  }
+  div.project-container div.project-box div.web-container div.web-title h2 {
+    font-size: 22px;
+  }
+  div.project-container div.project-box div.web-container div.web-description p {
+    font-size: 18px;
+  }
+  div.project-container div.project-box div.front-container {
+    width: 320px;
+  }
+  div.project-container div.project-box div.front-container div.front-title h2 {
+    font-size: 22px;
+  }
+  div.project-container div.project-box div.front-container div.front-description p {
+    font-size: 18px;
+  }
+  div.project-container div.project-box div.uiux-container {
+    width: 320px;
+  }
+  div.project-container div.project-box div.uiux-container div.uiux-title h2 {
+    font-size: 22px;
+  }
+  div.project-container div.project-box div.uiux-container div.uiux-description p {
+    font-size: 18px;
+  }
+  div.latest-container {
+    padding: 8em 4em;
+  }
+  div.latest-container h2.latest-works {
+    font-size: 32px;
+  }
+  div.latest-container p.new-project {
+    font-size: 20px;
+  }
+  div.latest-container div.thumbnail-container div.thumbnail div.thumnail-img img {
+    width: 100%;
+  }
+  div.latest-container div.thumbnail-container div.thumbnail div.thumbnail-title h3 {
+    font-size: 26px;
+  }
+  div.latest-container div.thumbnail-container div.thumbnail div.thumbnail-title div.sub-title h4 {
+    font-size: 18px;
+  }
+  div.about {
+    padding: 2em 4em;
+  }
+  div.about div.profile {
+    padding-top: 5em;
+  }
+  div.about div.profile img {
+    width: 50%;
+    height: 52%;
+  }
+  div.about div.about-description div.about-head h1 {
+    font-size: 32px;
+  }
+  div.about div.about-description p {
+    padding-top: 4em;
+    font-size: 20px;
+    line-height: 2em;
+  }
+  div.contact-container {
+    padding: 4em 4em;
+  }
+  div.contact-container div.contact-title h1 {
+    font-size: 32px;
+  }
+  div.contact-container div.contact-title p {
+    font-size: 20px;
+  }
+  div.contact-container form {
+    padding-top: 4em;
+  }
+  div.contact-container form label {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  div.contact-container form input {
+    margin-bottom: 1.7em;
+    border: #E8E8E8 solid;
+    background: #E8E8E8;
+    padding: 1em;
+    width: 100%;
+    border-radius: .4em;
+  }
+  div.contact-container form textarea {
+    border: #E8E8E8 solid;
+    background: #E8E8E8;
+    width: 100%;
+  }
+  div.contact-container .btn-container {
+    padding-top: 2em;
+  }
+  div.contact-container .btnSend {
+    text-align: center;
+    padding: 1.2em 3em;
+    background: #5222D0;
+    color: #E8E8E8;
+    font-weight: bold;
+  }
+  div.contact-container button.btnSend {
+    border-radius: .4em;
+  }
+  div.contact-container .social-contact {
+    padding-top: 4em;
+    font-size: 20px;
+  }
+  div.contact-container .social-contact .messenger {
+    padding-bottom: 1em;
+  }
+  div.contact-container .social-contact .gmail {
+    padding-bottom: 1em;
+  }
+  div.contact-container .social-contact .phone {
+    padding-bottom: 7em;
+  }
+  div.contact-container .social-contact i {
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=index.css.map */
