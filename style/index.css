@@ -102,34 +102,61 @@ nav .openMenu {
   display: block;
 }
 
-.hero-container {
-  padding: 4em 1em;
+section.hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem auto;
+  justify-content: left;
+  align-items: center;
 }
 
-.hero-container .sub-content {
+section.hero-container div.left-content .sub-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   letter-spacing: 1px;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 12px;
   font-weight: bold;
   color: #696969;
 }
 
-.hero-container h1 {
+section.hero-container div.left-content h1.lets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   letter-spacing: 1px;
-  padding-top: .2em;
-  font-size: 32px;
   text-align: center;
+  font-size: 32px;
   color: #212529;
 }
 
-.hero-container .sub-text {
+section.hero-container div.left-content .sub-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
   padding: .5em 2em;
   font-size: 13px;
-  text-align: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   color: #212529;
 }
 
-.hero-container .btn-work {
+section.hero-container div.left-content .btn-work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +170,7 @@ nav .openMenu {
   margin-bottom: 4em;
 }
 
-.hero-container .btn-work .view-work {
+section.hero-container div.left-content .btn-work .view-work {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -164,14 +191,14 @@ nav .openMenu {
   padding: .8em;
 }
 
-.hero-container .btn-work .arrow {
+section.hero-container div.left-content .btn-work .arrow {
   padding: 0 .3em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.devImage img {
+section.hero-container div.devImage img {
   display: none;
 }
 
@@ -594,69 +621,80 @@ nav .openMenu {
   div.navigation-container div.logo {
     font-size: 20px;
   }
-  .hero-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "hero-container devImage";
+  section.hero-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1200px;
   }
-  div.hero-container {
-    padding: 4em 2em;
-  }
-  div.hero-container p.sub-content {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    padding: 0 1.5em;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: hero-container;
-    letter-spacing: 1px;
-    font-size: 12px;
-    text-align: left;
-  }
-  div.hero-container h1.lets {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    padding: 1em .6em;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: hero-container;
-    font-size: 33px;
-    font-weight: bold;
-    text-align: left;
-  }
-  div.hero-container p.sub-text {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    margin: 0;
-    padding: 12em 2em;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: hero-container;
-    font-size: 12px;
-    text-align: left;
-    font-weight: 500;
-  }
-  div.hero-container .btn-work {
-    display: block;
-    padding-top: 13em;
-    padding-left: 1.5em;
-    -ms-grid-column-align: left;
-        justify-self: left;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: hero-container;
-  }
-  div.hero-container div.devImage img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: devImage;
-    width: 100%;
+  section.hero-container div.left-content {
+    content: "";
+    right: 0;
     display: inline-block;
+  }
+  section.hero-container div.left-content p.sub-content {
+    margin-bottom: 1rem;
+    text-align: left;
+    display: block;
+  }
+  section.hero-container div.left-content h1.lets {
+    margin-bottom: 1rem;
+    padding: 0;
+    text-align: left;
+    display: block;
+  }
+  section.hero-container div.left-content p.sub-text {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+  }
+  section.hero-container div.left-content div.btn-work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 2em 0;
+  }
+  section.hero-container div.left-content div.btn-work a.view-work {
+    margin: 0;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    display: inline-block;
+    font-size: 14px;
+  }
+  section.hero-container div.right-content {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.hero-container div.devImage img {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   div.project-container {
     padding: .1em 2em;
@@ -898,9 +936,6 @@ nav .openMenu {
     width: 100%;
   }
   .contact-container .btn-container {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: form;
     padding-top: 2em;
     margin-bottom: 5em;
   }
@@ -928,8 +963,7 @@ nav .openMenu {
 
 @media screen and (min-width: 1200px) {
   .navigation-container {
-    padding: 0 auto;
-    padding-top: 3em;
+    padding: 3em 2em;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -951,30 +985,305 @@ nav .openMenu {
   .navigation-container nav .selection a {
     font-size: 18px;
   }
-  div.hero-container {
-    padding: 1em auto;
+  .navigation-container div.closeMenu {
+    display: none;
   }
-  div.hero-container p.sub-content {
-    font-size: 18px;
+  .navigation-container span.social {
+    display: none;
   }
-  div.hero-container h1.lets {
-    font-size: 46px;
+  section.hero-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  div.hero-container p.sub-text {
-    font-size: 18px;
-  }
-  div.hero-container div.btn-work {
-    margin-top: 5em;
-  }
-  div.hero-container div.btn-work a.view-work {
-    padding: 1.2em 1em;
-    font-size: 16px;
-  }
-  div.hero-container div.btn-work a.view-work i {
+  section.hero-container div.left-content p.sub-content {
     font-size: 20px;
   }
-  div.hero-container .devImage img {
+  section.hero-container div.left-content h1.lets {
+    font-size: 48px;
+  }
+  section.hero-container div.left-content p.sub-text {
+    font-size: 14px;
+  }
+  section.hero-container div.right-content {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.hero-container div.devImage img {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  div.project-container {
+    padding: 0 4em;
+    height: 500px;
+  }
+  div.project-container h2.my-projects {
+    padding: 0 auto;
+    font-size: 32px;
+  }
+  div.project-container p.check-mywork {
+    padding: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 18px;
+  }
+  div.project-container div.project-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3em;
+  }
+  div.project-container div.project-box div.web-container {
+    width: 320px;
+  }
+  div.project-container div.project-box div.web-container div.web-title h2 {
+    font-size: 22px;
+  }
+  div.project-container div.project-box div.web-container div.web-description p {
+    font-size: 18px;
+  }
+  div.project-container div.project-box div.front-container {
+    width: 320px;
+  }
+  div.project-container div.project-box div.front-container div.front-title h2 {
+    font-size: 22px;
+  }
+  div.project-container div.project-box div.front-container div.front-description p {
+    font-size: 18px;
+  }
+  div.project-container div.project-box div.uiux-container {
+    width: 320px;
+  }
+  div.project-container div.project-box div.uiux-container div.uiux-title h2 {
+    font-size: 22px;
+  }
+  div.project-container div.project-box div.uiux-container div.uiux-description p {
+    font-size: 18px;
+  }
+  div.latest-container {
+    padding: 8em 4em;
+  }
+  div.latest-container h2.latest-works {
+    font-size: 32px;
+  }
+  div.latest-container p.new-project {
+    font-size: 20px;
+  }
+  div.latest-container div.thumbnail-container div.thumbnail div.thumnail-img img {
+    width: 100%;
+  }
+  div.latest-container div.thumbnail-container div.thumbnail div.thumbnail-title h3 {
+    font-size: 26px;
+  }
+  div.latest-container div.thumbnail-container div.thumbnail div.thumbnail-title div.sub-title h4 {
+    font-size: 18px;
+  }
+  div.about {
+    padding: 2em 4em;
+  }
+  div.about div.profile {
+    padding-top: 5em;
+  }
+  div.about div.profile img {
+    width: 50%;
+    height: 52%;
+  }
+  div.about div.about-description div.about-head h1 {
+    font-size: 32px;
+  }
+  div.about div.about-description p {
+    padding-top: 4em;
+    font-size: 20px;
+    line-height: 2em;
+  }
+  div.contact-container {
+    padding: 4em 4em;
+  }
+  div.contact-container div.contact-title h1 {
+    font-size: 32px;
+  }
+  div.contact-container div.contact-title p {
+    font-size: 20px;
+  }
+  div.contact-container form {
+    padding-top: 4em;
+  }
+  div.contact-container form label {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  div.contact-container form input {
+    margin-bottom: 1.7em;
+    border: #E8E8E8 solid;
+    background: #E8E8E8;
+    padding: 1em;
+    width: 100%;
+    border-radius: .4em;
+  }
+  div.contact-container form textarea {
+    border: #E8E8E8 solid;
+    background: #E8E8E8;
+    width: 100%;
+  }
+  div.contact-container .btn-container {
+    padding-top: 2em;
+  }
+  div.contact-container .btnSend {
+    text-align: center;
+    padding: 1.2em 3em;
+    background: #5222D0;
+    color: #E8E8E8;
+    font-weight: bold;
+  }
+  div.contact-container button.btnSend {
+    border-radius: .4em;
+  }
+  div.contact-container .social-contact {
+    padding-top: 4em;
+    font-size: 20px;
+  }
+  div.contact-container .social-contact .messenger {
+    padding-bottom: 1em;
+  }
+  div.contact-container .social-contact .gmail {
+    padding-bottom: 1em;
+  }
+  div.contact-container .social-contact .phone {
+    padding-bottom: 7em;
+  }
+  div.contact-container .social-contact i {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  div.navigation-container {
+    padding: 20px auto;
+  }
+  div.navigation-container div.logo {
+    margin-right: auto;
+  }
+  div.navigation-container div.logo a {
+    font-size: 20px;
+  }
+  div.navigation-container div.openMenu {
+    display: none;
+  }
+  div.navigation-container div.closeMenu {
+    display: none;
+  }
+  div.navigation-container span.social {
+    display: none;
+  }
+  div.navigation-container nav ul.selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: contents;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.navigation-container nav ul.selection li a {
+    font-size: 16px;
+  }
+  div.navigation-container nav ul.selection a {
+    font-weight: 500;
+    color: #212529;
+  }
+  div.navigation-container ul.selection li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  div.navigation-container nav .selection a {
+    font-size: 18px;
+  }
+  section.hero-container {
+    max-width: 100%;
+    margin-bottom: 4em;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1200px;
+  }
+  section.hero-container div.left-content p.sub-content {
+    font-size: 20px;
+    max-width: 80%;
+  }
+  section.hero-container div.left-content h1.lets {
+    font-size: 60px;
+    max-width: 50%;
+  }
+  section.hero-container div.left-content p.sub-text {
+    width: 50%;
+    font-size: 20px;
+  }
+  section.hero-container div.left-content div.btn-work {
+    width: 100%;
+  }
+  section.hero-container div.left-content div.btn-work a.view-work {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    display: inline-block;
+    font-size: 20px;
+    max-width: 1200px;
+  }
+  section.hero-container div.right-content {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.hero-container div.devImage {
+    display: none;
+  }
+  section.hero-container {
+    position: relative;
+    background: url("/img/weDeveloper.svg");
+    background-position: right;
+    background-repeat: no-repeat;
   }
   div.project-container {
     padding: 0 4em;

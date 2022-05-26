@@ -111,29 +111,41 @@ nav .selection{
         display: block;
     }
 
-  //hero container
-  .hero-container{
-    padding: 4em 1em;
+    //hero container
+    section.hero-container{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin: 2rem auto;
+            justify-content: left;
+            align-items: center;
+
+   div.left-content{
       .sub-content{
+          display:flex;
          letter-spacing: 1px;
-          text-align: center;
+         text-align: center;
+         justify-content: center;
           font-size: 12px;
           font-weight: bold;
           color: #696969;
       }
 
-      h1{
+      h1.lets{
+          display:flex;
+          justify-content: center;
           letter-spacing: 1px;
-          padding-top: .2em;
-          font-size: 32px;
           text-align: center;
+          font-size: 32px;
           color: color(bg-font);    
       }
 
      .sub-text{
+        display:flex;
+        text-align: center;
           padding: .5em 2em;
           font-size: 13px;
-          text-align: center;   
+          align-self: center;
           color: color(bg-font);    
       }
 
@@ -165,9 +177,10 @@ nav .selection{
       }
   }
 
-  .devImage img{
+  div.devImage img{
     display: none;
   }
+}
 
     .project-container{
         background: color(bg-projects);
@@ -583,58 +596,81 @@ nav .selection{
         }
 
          //hero container content
-        .hero-container{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 
-            "hero-container devImage";
-            
-        }
-        div.hero-container{
-           padding: 4em 2em;
+         section.hero-container{
+            display: flex;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: left;
+            align-items: center;
+            max-width: 1200px;
+
+         div.left-content{
+            content: "";
+            right: 0;
+            display: inline-block;
+
             p.sub-content{
-                display: inline-flex;
-                padding: 0 1.5em;
-                grid-area: hero-container;
-                letter-spacing: 1px;
-                font-size: 12px;
+               
+                margin-bottom: 1rem;
                 text-align: left;
+                display: block;
             }
-            
+
             h1.lets{
-                display: inline-flex;
-                padding: 1em .6em;
-                grid-area: hero-container;
-                font-size: 33px;
-                font-weight: bold;
+                
+                margin-bottom: 1rem;
+                padding: 0;
                 text-align: left;
+                display: block;
             }
 
             p.sub-text{
-                display: inline-flex;
+             
+                padding: 0;
                 margin: 0;
-                padding: 12em 2em;
-                grid-area: hero-container;
-                font-size: 12px;
                 text-align: left;
-                font-weight: 500;
-            }
-
-            .btn-work{
-                display: block;
-                padding-top: 13em;
-                padding-left: 1.5em;
-                justify-self: left;
-                grid-area: hero-container;
-            }
-
-            div.devImage img{
-                grid-area: devImage;
-                width: 100%;
                 display: inline-block;
             }
+
+            div.btn-work{
+               display: flex;
+               justify-content: flex-start;
+               padding: 2em 0;
+                a.view-work{
+                    margin: 0;
+                    justify-content: left;
+                    display: inline-block;
+                    font-size: 14px;
+                 }
+            }
+         }
+
+         div.right-content{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
+            div.devImage img{
+                position: relative;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                width: 100%;
+                display: flex;
+            }
+
+        }
+
+        // section.hero-container img{
+        //     height: 50%;
+        //     background:url("/img/weDeveloper.svg");
+        //     background-position: right;
+        //     background-repeat: no-repeat;
+        // }
+  
 
         //my projects section
         div.project-container{
@@ -870,7 +906,6 @@ nav .selection{
     }
 
         .btn-container{
-            grid-area: form;
             padding-top: 2em;
             margin-bottom: 5em;
         }
@@ -905,8 +940,7 @@ nav .selection{
 
         //navigation container
          .navigation-container{
-          padding: 0 auto;
-          padding-top: 3em;
+          padding: 3em 2em;
           justify-content: center;
              div.logo a{
                  font-size: 24px;
@@ -930,37 +964,57 @@ nav .selection{
                 nav .selection a{
                     font-size: 18px;
                 }
+
+                div.closeMenu{
+                    display: none;
+                }
+                
+                span.social{
+                    display:none;
+                }
          }
 
          //hero container
-         div.hero-container{
-             padding: 1em auto;  
-           
-             p.sub-content{
-                font-size: 18px;
-             }
-             h1.lets{
-                font-size: 46px;
-             }
-             p.sub-text{
-                font-size: 18px;
-             }
+         section.hero-container{
+            display: flex;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: left;
+            align-items: center;
 
-             div.btn-work{
-                margin-top: 5em;
-                a.view-work{
-                    padding: 1.2em 1em;
-                    font-size: 16px;
-                    i{
-                        font-size: 20px;
-                    }
-                }
-             }
+         div.left-content{
 
-             .devImage img{
-                width: 100%;
-             }
+            p.sub-content{
+                font-size: 20px;
+            }
+
+            h1.lets{
+                font-size: 48px;
+            }
+
+            p.sub-text{
+                font-size: 14px;
+
+            }
          }
+
+         div.right-content{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            div.devImage img{
+                position: relative;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                width: 100%;
+                display: flex;
+            }
+
+        }
 
          //My Projets
          div.project-container{
@@ -1147,6 +1201,296 @@ nav .selection{
 
        }
 
+     }
+
+     @media screen and (min-width: 1280px){
+                //navigation container
+                div.navigation-container{
+                    padding: 20px auto;  
+                       div.logo{
+                           margin-right: auto;
+                           a{
+                               font-size: 20px;
+                           }
+                          }
+
+                          div.openMenu{
+                              display: none;
+                          }
+
+                          div.closeMenu{
+                              display:none;
+                          }
+
+                          span.social{
+                              display:none;
+                          }
+          
+                          nav ul.selection{
+                              display: flex;
+                              display: contents;
+                            
+                              justify-content: flex-end;
+                              align-items: center;
+                              
+                              li a{
+                                  font-size: 16px;
+                              }
+                              
+                              a{            
+                                  font-weight: 500;
+                                  color: #212529;
+                              }
+                          }
+
+                          ul.selection li{
+                            display: inline-block;
+                            padding: 0px 20px;
+                          }
+
+                          nav .selection a{
+                              font-size: 18px;
+                          }
+                   }
+          
+                   //hero container
+                   section.hero-container{
+                    
+                    max-width: 100%;
+                    margin-bottom: 4em;
+                    justify-content: left;
+                    display: flex;
+                    align-items: center;
+                    max-width: 1200px;
+                   div.left-content{
+                    
+                    p.sub-content{
+                        font-size: 20px;
+                        max-width: 80%;
+                    }
+        
+                    h1.lets{
+                        font-size: 60px;
+                          max-width: 50%;
+                     
+                    }
+        
+                    p.sub-text{
+                       width: 50%;
+                        font-size: 20px;
+                    }
+
+                    div.btn-work{
+                        width: 100%;
+                        a.view-work{
+                            justify-content: left;
+                            display: inline-block;
+                            font-size: 20px;
+                            max-width: 1200px;
+                         }
+                    }
+                 }
+        
+                 div.right-content{
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                    div.devImage{
+                       display: none;
+                    }
+                }
+                section.hero-container{
+                    position: relative;
+                    background:url("/img/weDeveloper.svg");
+                    background-position: right;
+                    background-repeat: no-repeat;
+                }
+          
+                   //My Projets
+                   div.project-container{
+                      padding: 0 4em;
+                      height: 500px;
+                   h2.my-projects{
+                      padding: 0 auto;
+                      font-size: 32px;
+                   }
+                   p.check-mywork{
+                      padding: 0 auto;
+                      display: flex;
+                      font-size: 18px;
+                   }
+          
+                   div.project-box{
+                      display: flex;
+                      justify-content: center;
+                      gap: 3em;
+                      div.web-container{
+                          width: 320px;
+          
+                          div.web-title h2{
+                              font-size: 22px;
+                          }
+                          div.web-description p{
+                              font-size: 18px;
+                          }
+                      }
+          
+                      div.front-container{
+                          width: 320px;
+          
+                          div.front-title h2{
+                              font-size: 22px;
+                          }
+                          div.front-description p{
+                              font-size: 18px;
+                          }
+                      }
+          
+                      div.uiux-container{
+                          width: 320px;
+          
+                          div.uiux-title h2{
+                              font-size: 22px;
+                          }
+                          div.uiux-description p{
+                              font-size: 18px;
+                          }
+                      }
+                   }
+                 }
+          
+                 //Latest Works Section
+                 div.latest-container{
+                      padding:8em 4em;
+          
+                      h2.latest-works{
+                          font-size: 32px;
+                      }
+                      p.new-project{
+                          font-size: 20px;
+                      }
+          
+                      div.thumbnail-container{
+                          div.thumbnail{
+          
+                              div.thumnail-img img{
+                                  width: 100%;
+                              }
+          
+                              div.thumbnail-title{
+                                  h3{
+                                      font-size: 26px;
+                                  }
+                                  div.sub-title{
+                                      h4{
+                                          font-size: 18px;
+                                      }
+                                  }
+                              }
+          
+                          }
+                      }
+                 }
+          
+                 //About Me Section
+                 div.about{
+                      padding: 2em 4em;
+          
+                  div.profile{
+                     padding-top: 5em;
+                  }
+          
+                  div.profile img{
+                      width: 50%;
+                      height: 52%;
+                  }
+          
+                  div.about-description{
+                      div.about-head{
+                          h1{
+                              font-size: 32px;
+                          }
+                      }
+          
+                      p{
+                          padding-top: 4em;
+                          font-size: 20px;
+                          line-height: 2em;
+                      }
+                  }
+                 }
+          
+                 //Contact Section
+                 div.contact-container{
+                  padding: 4em 4em;
+                  div.contact-title{
+                      h1{
+                          font-size: 32px;
+                      }
+                      p{
+                          font-size: 20px;
+                      }
+                  }
+          
+                  form{
+                      padding-top: 4em;
+                      
+                      label{
+                          font-size: 20px;
+                          font-weight: bold;
+                      }
+                      input{
+                          margin-bottom: 1.7em;
+                          border: #E8E8E8 solid;
+                          background: #E8E8E8;
+                          padding: 1em;
+                          width: 100%;
+                          border-radius: .4em;
+                      }
+                      textarea{
+                          border: #E8E8E8 solid;
+                          background: #E8E8E8;
+                          width: 100%;
+                      }
+                  }
+          
+                  .btn-container{
+                      padding-top: 2em;
+                  }
+          
+                  .btnSend{
+                      text-align: center;
+                      padding: 1.2em 3em;
+                      background: #5222D0;
+                      color: #E8E8E8;
+                      font-weight: bold;
+                  }
+          
+          
+                  button.btnSend{
+                      border-radius: .4em;
+                  }
+          
+                  .social-contact{
+                  padding-top: 4em;
+                  font-size: 20px;
+                      .messenger{
+                          padding-bottom: 1em;
+                      }
+                      .gmail{
+                          padding-bottom: 1em;
+                      }
+                      .phone{
+                          padding-bottom: 7em;
+                      }
+                      i{
+                          font-size: 24px;
+                      }
+                  }  
+          
+                 }
      }
 
 
