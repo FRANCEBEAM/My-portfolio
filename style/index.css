@@ -1228,7 +1228,6 @@ section.hero-container div.devImage img {
     font-size: 18px;
   }
   section.hero-container {
-    max-width: 100%;
     margin-bottom: 4em;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
@@ -1337,7 +1336,7 @@ section.hero-container div.devImage img {
     font-size: 18px;
   }
   div.latest-container {
-    padding: 8em 4em;
+    padding: 8em auto;
   }
   div.latest-container h2.latest-works {
     font-size: 32px;
@@ -1346,7 +1345,19 @@ section.hero-container div.devImage img {
     font-size: 20px;
   }
   div.latest-container div.thumbnail-container div.thumbnail div.thumnail-img img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   div.latest-container div.thumbnail-container div.thumbnail div.thumbnail-title h3 {
     font-size: 26px;
@@ -1358,18 +1369,18 @@ section.hero-container div.devImage img {
     padding: 2em 4em;
   }
   div.about div.profile {
-    padding-top: 5em;
+    padding-top: 1em;
   }
   div.about div.profile img {
     width: 50%;
-    height: 52%;
+    height: 62%;
   }
   div.about div.about-description div.about-head h1 {
     font-size: 32px;
   }
   div.about div.about-description p {
     padding-top: 4em;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 2em;
   }
   div.contact-container {
